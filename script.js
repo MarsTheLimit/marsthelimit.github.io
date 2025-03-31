@@ -50,6 +50,9 @@ function stopTone() {
 }
 
 function restartTone() {
+  if (audioContext.state === "suspended") {
+    audioContext.resume();
+  }
   stopTone();
   startTone();
 }
