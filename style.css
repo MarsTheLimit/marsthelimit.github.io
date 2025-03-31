@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&family=Open+Sans&display=swap');
+
+:root {
+	font-family: 'Open Sans', sans-serif;
+	--light-gray: #9f9f9f;
+	--gray: #ebebeb;
+	--green: #4bd75c;
+	--dark-green: #018311;
+	--white: #fbfefb;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-bottom: 5%;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+button {
+	padding: 1%;
+	border-radius: 10px;
+}
+
+p {
+	padding: 2%;
+	padding-top: 0;
+}
+
+#volume {
+	cursor: pointer;
+}
+
+.buttons {
+	padding-top: 20px;
+}
+
+.restart {
+	margin-right: 5%;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.main_container {
+	margin-right: 20%;
+	margin-left: 20%;
+	text-align: center;
+	padding: 5%;
+	padding-top: 100px;
+}
+
+.main_content {
+	padding: 5%;
+	background-color: #89cff0;
+	border-radius: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+	.main_container {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+}
+
+.info {
+	text-align: left;
+}
+
+.back_button {
+	position: fixed;
+	padding: 5px;
+	margin: 5px;
+}
+
+.btns {
+	align-items: ;
+}
+
+.article_content {
+	font-family: 'Merriweather', serif;
+	padding: 20px;
+	text-align: left;
+}
+
+.article_content h1 {
+	font-size:2.5rem;
+}
+
+.article_content h2 {
+	padding: 10px;
+	padding-top: 40px;
+}
+
+.article_content p, ul {
+	padding: 5px;
+	line-height: 2rem;
+}
+
+/*Navbar*/
+nav {
+	width: 100%;
+	background-color: var(--gray);
+	position: fixed;
+}
+
+.logo {
+	margin: 0px;
+	margin-left: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-links {
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+.navbar-links ul {
+	list-style: none;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link {
+	text-decoration: none;
+	color: black;
+	margin-left: 30px;
+}
+
+.navbar-link:hover {
+	color: var(--light-gray);
+}
+
+.navbar-links button{
+	margin-left: 10px; 
+	background: var(--white);
+	border: none;
+	color: black;
+	font-size: 1.1rem;
+}
+
+.navbar-links button:hover{
+	cursor: pointer;
+	color: var(--light-gray);
+}

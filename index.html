@@ -1,2 +1,52 @@
-redirecting you to donald-n.github.io
-<script>window.location.replace("https://donald-n.github.io/");</script>
+<! DOCTYPE html>
+<html>
+<head>
+	<title>Home | Brainwaves</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/x-icon" href="img/icon.png">
+</head>
+<body>
+	<nav>
+		<div class="navbar-links">
+			<ul>
+				<li><div class="logo">
+					<a href="index.html"><img src="img/logo-small.png"></a>
+				</div></li>
+				<li><a class="navbar-link" href="index.html">
+					Home</a></li>
+				<li><a class="navbar-link" href="how_to_use.html">
+					How To Use</a></li>
+				<li><a class="navbar-link" href="waves_info.html">
+					Learn More</a></li>
+			</ul><br>
+		</div>
+	</nav>
+	<div class="main_container"><div class="main_content">
+		<h1>Choose base frequency and the type of wave</h1>
+		<p>Base tone: <input type="number" id="freqInput" value="100" min="20" max="20000"> Hz</p>
+		<p>Frequency: <input type="number" id="diffInput" value="4" min="0.1" max="50"> Hz</p>
+		<div class="buttons">
+			<button onclick="startTone()">Play</button>
+    		<button onclick="stopTone()">Pause</button>
+    		<button onclick="restartTone()" class="restart">Restart</button><br><br>
+			<p>Right Volume: <input type="range" min="0" max="100" value="50" class="slider" id="volumeR"></p>
+			<p>Left Volume: <input type="range" min="0" max="100" value="50" class="slider" id="volumeL"></p>
+			<button onclick="document.getElementById('volumeL').value = document.getElementById('volumeR').value">Sync</button>
+		</div>
+		<div class="info">
+			<br/><br/>
+			<h2>Delta Waves (1-4 Hz) <div class="btns"><button onclick="document.getElementById('diffInput').value = 1;startTone();">Try it</button><button onclick="window.location.href='waves_info.html#delta'">Learn more</button></div></h2>
+			<br/><br/>
+			<h2>Theta Waves (4-8 Hz) <div class="btns"><button onclick="document.getElementById('diffInput').value = 4;startTone();">Try it</button><button onclick="window.location.href='waves_info.html#theta'">Learn more</button></div></h2>
+			<br/><br/>
+			<h2>Alpha Waves (8-13 Hz) <div class="btns"><button onclick="document.getElementById('diffInput').value = 8;startTone();">Try it</button><button onclick="window.location.href='waves_info.html#alpha'">Learn more</button></div></h2>
+			<br/><br/>
+			<h2>Beta Waves (14-30 Hz) <div class="btns"><button onclick="document.getElementById('diffInput').value = 14;startTone();">Try it</button><button onclick="window.location.href='waves_info.html#beta'">Learn more</button></div></h2>
+			<br/><br/>
+			<h2>Gamma Waves (30+ Hz) <div class="btns"><button onclick="document.getElementById('diffInput').value = 30;startTone();">Try it</button><button onclick="window.location.href='waves_info.html#gamma'">Learn more</button></div></h2>
+			<br/><br/>
+		</div>
+    </div></div>
+</body>
+</html>
