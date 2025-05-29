@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="A guide for beginners on how logic gates work. Covers all logic gates used in digital computers. Easy to understand, and includes visuals like truth tables." />
+        <meta name="author" content="Boden Bensema" />
+        <title>Beginner's Guide to Logic Gates</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/adsweb/logic-gates.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What is the difference between NAND and AND gates?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NAND gates are simply the opposite of AND gates. NAND gates stand for NOT-AND, or the NOT Boolean operation of AND gates."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How do truth tables work and help in understanding logic gates?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Truth tables help visualize how each input combination affects the output. They make it easier to understand logic gate behavior."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What are some real-life applications of logic gates?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Logic gates are used in all digital devices (devices that use digital logic), from smartphones and computers to calculators and microcontrollers."
+            }
+            }
+        ]
+        }
+        </script>
+
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Beginner's Guide to Logic Gates: Types, Truth Tables, and Symbols",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/adsweb/logic-gates.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Beginner's Guide to Logic Gates: Types, Truth Tables, and Symbol</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 29, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Digital Logic</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Logic Gates</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="" alt="..." /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">
+                                Computers are amazing and complex machines. But what makes computers able to compute? The answer lies in how logic gates work. Logic gates are the fundamental
+                                building blocks of digital circuits, just as cells are the building blocks of living organisms. While transistors form the physical basis of gates, logic
+                                gates define how signals are processed logically in a computer. Atoms technically make up everything, but cells are specialized for biological functions. This
+                                is similar to how transistors form logic gates, which are specialized for logical circuits. 
+                            </p>
+                            <h2 id="logic-basics" class="fw-bolder mb-4 mt-5">Logic Gate Basics</h2>
+                            <p class="fs-5 mb-4">
+                                Digital logic gates manipulate Boolean values using logical operations, or <a target="_blank" href="boolean-logic-explained.html">Boolean logic</a>. To generalize boolean logic, any input for boolean values can either
+                                be “yes” or “no”, “true” or “false”. There is no in between like “maybe”. With logic gates and digital computers, “yes” or "true" is referred to as a “1”, and
+                                “no” or “false” is referred to as a “0”. This is called true/false logic. There are a few types of logic gates, but to start, we will focus on the NOT gate.
+                            </p>
+                            <h2 id="not" class="fw-bolder mb-4 mt-5">The NOT Gate Explained</h2>
+                            <p class="fs-5 mb-4">
+                                The NOT gate takes 1 input, which, as explained earlier, can be either a “1” or a “0”. The NOT gate inverts the input:
+                                <ul>
+                                    <li class="fs-5 mb-4">
+                                        Inputting a 1 outputs a 0
+                                    </li>
+                                    <li class="fs-5 mb-4">
+                                        Inputting a 0 outputs a 1
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="fs-5 mb-4">
+                                The NOT gate itself is pretty self-explanatory, but in more complex circuits with hundreds of inputs and outputs, you will want an easier way to visualize
+                                what a circuit does. This is called a truth table.
+                            </p>
+                            <p class="fs-5 mb-4">
+                                Truth table for a NOT gate:
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="NOT gate truth table" /></figure>
+                            <p class="fs-5 mb-4">
+                                There's one input labeled “A” and one output labeled “Y”. When A equals 1, Y equals 0, and so on. This greatly simplifies explaining all the inputs and outputs
+                                of logic gates. The NOT gate also has a symbol used in schematics or logic diagrams when designing a logic circuit.
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="NOT logic gate visual" /></figure>
+                            <p class="fs-5 mb-4">
+                                The NOT gate is symbolized by a triangle pointing to the right with a small circle at the output. The circle indicates inversion, or that the output is the
+                                opposite of the input. The input in the gate's visual is labeled A, and the output is labeled Y. These are the labels that indicate which column in the truth
+                                table corresponds to which pin on the logic gate.  When we look at the inputs and outputs of the AND gate, we have double the inputs, thus doubling the 
+                                different combinations able to occur on the gate.
+                            </p>
+                            <h2 id="and-nand" class="fw-bolder mb-4 mt-5">The AND & NAND Gate Explained</h2>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="AND logic gate truth table and visual" /></figure>
+                            <p class="fs-5 mb-4">
+                                The AND gate outputs true only when both inputs are true. If just one of my inputs is false, output false. An easy way to remember what the AND gate does is 
+                                that it checks if both inputs A AND B are true. The AND gate symbol is also included in the image. As you can see, the second input is called B, which 
+                                corresponds to the second column on the truth table. The AND gate symbol has a flat left side for the inputs and a curved right side for the output. The NAND 
+                                gate is very similar to the AND gate, with one minor change.
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="NAND gate truth table and visual" /></figure>
+                            <p class="fs-5 mb-4">
+                                The NAND gate includes a small output circle, just like the NOT gate, indicating inversion. If you take a glance at the truth table, the outputs are exactly 
+                                the opposite of the AND gates. NAND stands for “not AND,” or the inverse of the AND gate. The OR and NOR gates have the same relationship as the AND and NAND 
+                                gates do.
+                            </p>
+                            <h2 id="or-nor" class="fw-bolder mb-4 mt-5">The OR & NOR Gate Explained</h2>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="OR and NOR logic gate truth table and visual" /></figure>
+                            <p class="fs-5 mb-4">
+                                The OR gate symbol (on the left) looks similar to the AND gate, but it curves outward on the input side and comes to a point at the output. The OR gate takes 
+                                two inputs, and if A or B is true, then the output is true. NOR (on the right), like NAND, means “not OR,” and its inputs are completely reversed from the OR's.
+                                The only time the NOR is true is if none of the inputs are true.
+                            </p>
+                            <h2 id="xor-xnor" class="fw-bolder mb-4 mt-5">The XOR & XNOR Gates Explained</h2>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="XOR and XNOR logic gate truth table and visual" /></figure>
+                            <p class="fs-5 mb-4">
+                                The XOR and XNOR gates resemble the OR gate symbol but with an additional curved line on the input side, distinguishing them as 'exclusive' gates. The X in XOR
+                                stands for exclusive. The XOR gates output a 1 if the two inputs are not the same and a 0 if the inputs are the same.  These gates are mainly used for adding two
+                                numbers together. XOR gates are used in binary addition because they determine the sum bit without carry (15 + 8 = 23, the carry is the 2 in 23. An XOR would
+                                output the 3, the sum bit, in 23). If you're adding two bits, A and B, the sum bit is the corresponding row for A and B, and the carry-out bit is an AND operation
+                                on A and B. The logic for the lower two bits would look like the XOR's truth table.
+                            </p><p class="fs-5 mb-4">
+                                Like the NAND and AND gates, the XNOR is "exclusive not or," and its outputs are inverted (given by the circle on the output).
+                            </p>
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">
+                                Logic gates are essential components in digital electronics, forming the foundation for all computing devices. The device you are reading this on likely has
+                                tens of thousands of these little gates all racing at lightning-fast speeds to render this on your screen. I encourage you to learn more about logic gates
+                                and how they work. Logic gates aren't just concepts. Logic gates exist physically, and it is possible to build logic gates on your own with transistors.
+                            </p>
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">What is the difference between NAND and AND gates?</div>
+                            <div class="card-body">NAND gates are simply the opposite of AND gates. NAND gates stand for NOT-AND, or the NOT Boolean operation of AND gates.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">How do truth tables work and help in understanding logic gates?</div>
+                            <div class="card-body">Truth tables help visualize how each input combination affects the output. They make it easier to understand logic gate behavior.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">What are some real-life applications of logic gates?</div>
+                            <div class="card-body">Logic gates are used in all digital devices (devices that use digital logic), from smartphones and computers to calculators and microcontrollers.</div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#logic-basics">Logic Gate Basics</a></li>
+                                <li><a href="#not">The NOT Gate Explained</a></li>
+                                <li><a href="#and-nand">The AND & NAND Gates Explained</a></li>
+                                <li><a href="#or-nor">The OR & NOR Gates Explained</a></li>
+                                <li><a href="#xor-xnor">The XOR & XNOR Gates Explained</a></li>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <ul>
+                                    <li><a href="#faq1">What is the difference between NAND and AND gates?</a></li>
+                                    <li><a href="#faq2">How do truth tables work and help in understanding logic gates?</a></li>
+                                    <li><a href="#faq3">What are some real-life applications of logic gates?</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4" style="top:20%">
+                        <div class="card-header">Quick Note</div>
+                        <div class="card-body">A “pin” in circuits is referred to as a connection. For example, an LED has two pins, the positive pin and the negative pin.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>

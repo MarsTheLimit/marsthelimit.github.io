@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Learn the basics of Boolean logic: true/false logic used in programming, and the symbols behind the AND, NOT, and OR boolean operators. Beginner tutorial." />
+        <meta name="author" content="Boden Bensema" />
+        <title>Boolean Logic in Programming: Operators and Syntax for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/adsweb/boolean-for-programmers.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What is the difference between = and == in programming?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The = is for assigning variables, while ==  is for performing a Boolean logic test to see if the two sides are equal."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What is Boolean logic in real life?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Boolean logic in real life is a voltage in a wire. Our article about understanding binary numbers covers this concept."
+            }
+            }
+        ]
+        }
+        </script>
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Boolean Logic in Programming: Expressions, Operators, and Syntax for Beginners",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-29",
+        "description": "Learn the basics of Boolean logic: true/false logic used in programming, and the symbols behind the AND, NOT, and OR boolean operators. Beginner tutorial.",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/adsweb/"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Boolean Logic in Programming: Expressions, Operators, and Syntax for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 28, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Programming</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Boolean Logic</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">Boolean logic is fundamental in computer
+                            programming, forming the basis of control flow, conditions, and decision-making
+                            in all major programming languages. That's what makes understanding how Boolean
+                            logic is used in programming and <a target="_blank" href="https://marsthelimit.github.io/adsweb/boolean-logic-explained.html">what Boolean logic is</a> an important concept
+                            when understanding computer science. Whether working with data in <a href="https://www.python.org/downloads/">Python</a>,
+                            creating a game in <a target="_blank" href="https://www.java.com/en/">Java</a>,
+                            or simply trying to expand your knowledge, this article will help you
+                            understand Boolean logic in code with simple terms and concepts.</p>
+
+                            <h2 id="boolean-basics" class="fw-bolder mb-4 mt-5">Boolean expression basics</h2>
+
+                            <p class="fs-5 mb-4">Boolean expressions are equations that can be
+                            evaluated down to one of two states: true or false. Either the expression is
+                            true, or it is false. For example,</p>
+
+                            <pre class="fw-bold mb-4">1 + 1 = 2</pre>
+
+                            <p class="fs-5 mb-4">Is true. However,</p>
+
+                            <pre class="fw-bold mb-4">1 + 1 = 3</pre>
+
+                            <p class="fs-5 mb-4">Is false. To break it down, notice that there
+                            in both expressions, there is a "=” sign. This sign separates the logical
+                            expression into two parts. For the first example, it separates "1 + 1” and "2”.
+                            Because the sign separating the two means "equals,” we can put this expression
+                            into words:</p>
+
+                            <pre class="fw-bold mb-4">One plus one equals two.</pre>
+
+                            <p class="fs-5 mb-4">This is a true statement. Boolean logic would evaluate the statement and return true. After evaluating a statement, we only
+                            care about the resulting true or false given by the Boolean output.</p>
+
+                            <p class="fs-5 mb-4">Boolean expressions can also use greater than or less than signs to return a true or false statement. By altering the above
+                            example two, we can say</p>
+
+                            <pre class="fw-bold mb-4"> 1 + 1 &lt; 3</pre>
+
+                            <p class="fs-5 mb-4">After evaluating the boolean expression, we
+                            would get an output of true. </p>
+
+                            <p class="fs-5 mb-4">Boolean expressions don't only use integers.
+                            Boolean expressions can also use strings. The following expression would output
+                            true:</p>
+
+                            <pre class="fw-bold mb-4"> "this text" = "this text"</pre>
+
+                            <p class="fs-5 mb-4">This returns true because each character in
+                            the string on the left perfectly matches each character in the string on the
+                            right.</p>
+
+                            <h2 id="boolean-code" class="fw-bolder mb-4 mt-5">Applying Boolean expressions in code</h2>
+
+                            <p class="fs-5 mb-4">What we have been dealing with is called equalities (=) and inequalities (&gt; or &lt;). All programming languages have
+                            different syntax, but there is a symbol that is most widely used in Java, C, C++, JavaScript, C#, Swift, Kotlin, Python, Ruby, PHP, Go, Rust, Perl, Scala,
+                            Dart, and Julia. For equalities, they all use the symbol "==”. In practice, this looks like</p>
+
+                            <pre class="fw-bold mb-4"> 1 == 1</pre>
+
+                            <p class="fs-5 mb-4">And this statement would be true. For inequalities, they use &gt; for greater than, &lt; for less than, &gt;= for
+                            greater than or equal to, and &lt;= for less than or equal to. An example for each of these:</p>
+
+                            <pre class="fw-bold mb-4"> 1 &lt; 2 
+    <i>returns true</i></pre>
+
+                            <pre class="fw-bold mb-4"> 2 &lt;= 2 
+    <i>returns true</i></pre>
+
+                            <pre class="fw-bold mb-4"> 4 &gt; 3 
+    <i>returns true</i></pre>
+
+                            <pre class="fw-bold mb-4"> 4 &gt;= 4 
+    <i>returns true</i></pre>
+
+                            <h2 id="boolean-operators" class="fw-bolder mb-4 mt-5">How to use Boolean operators</h2>
+
+                            <p class="fs-5 mb-4">Boolean operators are very important when understanding how to code. Three Boolean operators are most commonly used in
+                            coding: the AND, NOT, and OR operators. <a target="_blank"href="https://marsthelimit.github.io/adsweb/boolean-logic-explained.html#most-important">These most common Boolean operations</a> can cover pretty much every operation you will need
+                            to accomplish when programming. Let's take a look at how to use Boolean operators in code.</p>
+
+                            <h3 id="and-operator">AND Operator</h3>
+
+                            <p class="fs-5 mb-4">Most programming languages (C, C++, Java, JavaScript, C#, Go, Swift, Kotlin, Rust) use &amp;&amp; for their AND operator.
+                            However, some languages like Python, Ruby, and Lua use the word "and". To clear this up, here's a chart with the programming languages and their way of showing
+                            the Boolean operators: </p>
+
+                            <img alt="Different languages all use basic Boolean logic in programming, but there are different ways of representing this." />
+
+                            <p class="fs-5 mb-4">Let's dive into using this Boolean operator in code.</p>
+
+                            <p class="fs-5 mb-4">For the majority of programming languages, using the AND operator would look like this:</p>
+
+                            <pre class="fw-bold mb-4"> true &amp;&amp; false 
+    <i>returns false; AND requires all inputs to be true</i></pre>
+
+                            <p class="fs-5 mb-4">The other languages look like this:</p>
+                            
+                            <pre class="fw-bold mb-4"> true and true 
+    <i>returns true; all inputs are true</i></pre>
+
+                            <p class="fs-5 mb-4">The reason some coding languages use symbols
+                            and some use words is simply for human readability. Python is usually a
+                            beginner's programming language, so they most likely wanted to increase its
+                            readability for its purpose.</p>
+
+                            <h3 id="or-operator">OR Operator</h3>
+
+                            <p class="fs-5 mb-4">Like AND, many programming languages use ||
+                            for their logical OR operation, but Python, Ruby, and Lua use the literal word
+                            "or”. The OR operator's usage is exactly similar to the AND operator's, but
+                            with a different symbol and output. For the majority, you would write</p>
+
+                            <pre class="fw-bold mb-4"> true || false 
+    <i>returns true; Only one input has to be true</i></pre>
+
+                            <p class="fs-5 mb-4">For Python, Ruby, and Lua, it is very similar;
+                            the only difference is the change of the symbol:</p>
+
+                            <pre class="fw-bold mb-4"> false or false 
+    <i>returns false; no inputs are true</i></pre>
+
+                            <p class="fs-5 mb-4">It is the same operator, but with a different
+                            representation.</p>
+
+                            <h3 id="not-operator">NOT Operator</h3>
+
+                            <p class="fs-5 mb-4">Following the trend, NOT is symbolized by a
+                            "!" in most languages, but in Python, Ruby, and Lua, you perform the NOT
+                            operation with the word "not”. NOT, being the only Boolean operator with one
+                            input, is slightly different than the other two operators above. This operator,
+                            in Java and the rest, looks like this:</p>
+
+                            <pre class="fw-bold mb-4"> !true 
+    <i>returns false, as the opposite of true is false</i></pre>
+
+                            <p class="fs-5 mb-4">And in Python, Ruby, and Lua:</p>
+
+                            <pre class="fw-bold mb-4"> not true
+    <i>returns false again</i></pre>
+
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+
+                            <p class="fs-5 mb-4">Boolean logic is a core concept in programming
+                            languages, enabling decision-making and control flow through simple true/false
+                            evaluations. Whether using &amp;&amp; and || in Java, or and and or in Python,
+                            all modern programming relies heavily on boolean expressions. Mastering these
+                            fundamentals helps you write cleaner, smarter, and more logical code—an
+                            essential skill for beginners in software development.</p>
+
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">What is the difference between = and == in programming?</div>
+                            <div class="card-body">The = is for assigning variables, while ==  is for performing a Boolean logic test to see if the two sides are equal.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">What is Boolean logic in real life?</div>
+                            <div class="card-body">Boolean logic in real life is a voltage in a wire. Our article about <a target="_blank"href="https://marsthelimit.github.io/adsweb/binary-explained.html">
+                                understanding binary numbers</a> covers this concept.</div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#boolean-basics">Boolean Expression Basics</a></li>
+                                <li><a href="#boolean-code">Applying Boolean Expressions in Code</a></li>
+                                <li><a href="#boolean-operators">How to use Boolean operators</a>
+                                    <ul>
+                                        <li><a href="#and-operator">AND Operator</a></li>
+                                        <li><a href="#or-operator">OR Operator</a></li>
+                                        <li><a href="#not-operator">NOT Operator</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <ul>
+                                    <li><a href="#faq1">What is the difference between = and == in programming?</a></li>
+                                    <li><a href="#faq2">What is Boolean logic in real life?</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4" style="top:48%;">
+                        <div class="card-header">Quick Tip</div>
+                        <div class="card-body">In Python, Boolean values are capitalized: True and False.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>

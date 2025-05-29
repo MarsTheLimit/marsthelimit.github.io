@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Learn the basics of Boolean logic—true/false logic used in digital circuits, programming, and computer architecture with AND, OR, and NOT operations." />
+        <meta name="author" content="Boden Bensema" />
+        <title>Boolean Logic Explained: AND, OR, NOT for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/adsweb/boolean-logic-explained.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What applications does Boolean logic have in computer hardware?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Boolean logic and operators are the basis of all binary logic. Read about: logic gates. More information about: the binary number system"
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What applications does Boolean logic have in computer software?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Boolean logic is used in computer software to store and manipulate Boolean data. While all the underlying operations in coding are Boolean, some parts of coding don't require Boolean operations. Read more about Boolean equations in programming."
+            }
+            }
+        ]
+        }
+        </script>
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Boolean Logic Explained: AND, OR, NOT for Beginners",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "Learn the basics of Boolean logic—true/false logic used in digital circuits, programming, and computer architecture with AND, OR, and NOT operations.",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/adsweb/boolean-logic-explained.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Boolean Logic Explained: AND, OR, NOT for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 28, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Digital Logic</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Boolean Logic</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">
+                                Whether you realize it or not, you use Boolean logic daily. By saying “I do NOT want that” or “I like this AND that,” you use Boolean expressions. Assuming you 
+                                accessed this article through a digital device, you have caused your device to use Boolean logical operators in processing information to get you to where you 
+                                are. Boolean logic consists of two possible values: true and false. This is why Boolean logic (and <a target="_blank" href="binary-explained.html">binary logic</a>) is considered true/false logic. For example, 
+                                if someone asked you if you like ice cream, if you were using Boolean logic, you could say “yes” or “no” (yes being true and no being false). A few operators 
+                                commonly used for boolean operations are NOT, AND, and OR. Let's dive into the basics of Boolean logic for beginners.
+                            </p>
+                            <h2 id="most-important" class="fw-bolder mb-4 mt-5">The Three Most Important Boolean Operators</h2>
+                            <p class="fs-5 mb-4">
+                                Boolean operations are the foundation of logic in digital computers and everyday decisions. Explain simply,  Boolean operations work with values that can be 
+                                either true or false, also commonly represented as 1 (true) and 0 (false). The three most basic and important Boolean operations are AND, OR, and NOT.
+
+                            </p>
+                            <h3 id="and-operator" class="fw-semibold mb-4 mt-5">AND Operator</h3>
+                            <p class="fs-5 mb-4">
+                                The AND operation checks if two or more conditions are true. If every input is true, the output will also be true. If even one of the inputs 
+                                is false, the entire statement becomes false. Consider this statement:
+                            </p>
+                            <blockquote class="fs-5" style="text-indent: 15px;"><i>If I like ice cream AND cake, then I like ice cream cake.</i></blockquote>
+                            <p class="fs-5 mb-4">
+                                Both conditions, liking ice cream and liking cake, must be true for the conclusion to be true. If you like only one of the two, the statement
+                                becomes false. In Boolean logic, this would look like:
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/and-truth-table.png" alt="truth table for the AND Boolean operator" /></figure>
+                            <p class="fs-5 mb-4">This table is called a truth table. The truth table for the AND operator shows that only when both A and B are 1 (true) does the output become 1.</p>
+                            <h3 id="or-operator" class="fw-semibold mb-4 mt-5">OR Operator</h3>
+                            <p class="fs-5 mb-4">
+                                The OR operation checks if at least one of the conditions is true. If either one (or both) inputs are true, the output will also be true. It only becomes 
+                                false when both inputs are false. As an example:
+                            </p>
+                            <blockquote class="fs-5" style="text-indent: 15px;"><i>If I like cookies OR brownies, then I'll be happy.</i></blockquote>
+                            <p class="fs-5 mb-4">
+                                Even if you like just one of them, you'll still be happy. The only way you wouldn't be happy is if you didn't like either. Truth table for OR:
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/or-truth-table.png" alt="truth table for the OR Boolean operator" /></figure>
+                            <h3 id="not-operator" class="fw-semibold mb-4 mt-5">NOT Operator</h3>
+                            <p class="fs-5 mb-4">
+                                The NOT operation is a bit different—it's a unary operator, meaning it works with only one input. NOT is the smallest of the Boolean logic operators. The NOT 
+                                operation simply inverts the value it receives as input. If the input is true, it outputs false. If the input is false, it outputs true.
+
+                            </p>
+                            <blockquote class="fs-5" style="text-indent: 15px;"><i>If I do not like broccoli, then I won't eat it.</i></blockquote>
+                            <p class="fs-5 mb-4">
+                                Here, liking broccoli is the input. The NOT operator flips that value. If you do like it (true), the NOT turns it into false (you won't avoid it). If you don't
+                                like it (false), the NOT turns it into true (you'll avoid it). The truth table for NOT is much simpler compared to AND and OR, because it has only one input:
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/not-truth-table.png" alt="truth table for the NOT Boolean operator" /></figure>
+                            <h2 id="if-then" class="fw-bolder mb-4 mt-5">If-Then Logic Format</h2>
+                            <p class="fs-5 mb-4">
+                                Most Boolean operations can be described using an "if-then" format. These statements form the basic logic we use in everyday decisions and programming. For 
+                                example:
+                            </p>
+                            <blockquote class="fs-5" style="text-indent: 15px;"><i>If it's raining AND I forgot my umbrella, then I'll get wet.</i></blockquote>
+                            <p class="fs-5 mb-4">
+                                This is a Boolean condition: two truths lead to a logical consequence. In digital computers, computing with <a target="blank_" href="logic-gates.html"></a>logic gates</a>, millions of decisions are made 
+                                every second, all using this Boolean format.
+                            </p>
+                            <h2 id="programmers" class="fw-bolder mb-4 mt-5">Boolean Logic for Programmers</h2>
+                            <p class="fs-5 mb-4">
+                                Boolean logic for programmers is very similar to the Boolean logic we use in everyday life. Boolean logic can be used in if-then statements and operations on 
+                                variables in programming. The following code snippet checks if cakeLiked && (&& means and) iceCreamLiked are both true. If they are, then make iceCreamCakeLiked 
+                                true as well. 
+                            </p>
+                            <pre class="fw-bold mb-4">if (cakeLiked && iceCreamLiked) {
+    iceCreamCakeLiked = true;
+}</pre>
+                            <p class="fs-5 mb-4">
+                                The "!" in front of a piece of code is the same as a NOT operator. If you wanted to change the value of a Boolean variable to its inverse, you could write
+                            </p>
+                            <pre class="fw-bold mb-4">x = false
+x = !x</pre>
+                            <p class="fs-5 mb-4">
+                                Now, after this operation, "x" equals true.
+                            </p>
+                            <p class="fs-5 mb-4">
+                                This is not a very in-depth explanation of Boolean logic in code. Check out our article on <a target="blank_" href="boolean-for-programmers.html">learning more about Boolean logic in programming</a>.
+                            </p>
+                            <h2 id="extra-symbols" class="fw-bolder mb-4 mt-5">Common Extra Symbols</h2>
+                            <p class="fs-5 mb-4">
+                                In Boolean logic, a common symbol is a line over an operator, which looks like this: W̅. This means to perform the "not" operation on the value W. So if W equals 
+                                1, W̅ equals 0. This is one of the most common Boolean logic symbols in many circuit applications. Additionally, you may see a truth table that looks like this:
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/dont-care-state-example.png" alt="Example for the don't care state" /></figure>
+                            <p class="fs-5 mb-4">All the "X" means is that when the first column is at a "0" state, then the other columns are disabled, or in the don't care state, and do not
+                                matter. An example would be that the first column is the power connecting to the circuit, and when the circuit is powered off, then the other outputs will not do
+                                anything. Thus, they are in the "don't care" state.
+                            </p>
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">
+                                Boolean logic is widely used in many aspects of programming and basic-level computer design. A good next step would be to learn more about the more complex 
+                                Boolean operators used in computers as logic gates. Boolean logic forms the backbone of programming, digital electronics, and computer science. By mastering 
+                                the fundamental Boolean operators, you'll be ready to explore more advanced topics like logic gates and digital circuits. 
+                            </p>
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">What applications does Boolean logic have in computer hardware?</div>
+                            <div class="card-body">
+                                <p>
+                                    Boolean logic and operators are the basis of all binary logic.
+                                </p><p>
+                                    Read about: <a target="blank_" href="logic-gates.html">logic gates</a>
+                                </p><p>
+                                    More information about: the <a target="_blank" href="binary-explained.html">binary number system</a>
+                                </p>
+                            </div></div>
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">What applications does Boolean logic have in computer software?</div>
+                            <div class="card-body">
+                                    Boolean logic is used in computer software to store and manipulate Boolean data. While all the underlying operations in coding are Boolean, some parts of 
+                                    coding don't require Boolean operations. Read more about <a target="blank_" href="boolean-for-programmers.html">Boolean equations in programming</a>.
+                            </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#most-important">The Three Most Important Boolean Operators</a></li>
+                                <ul>
+                                    <li><a href="#and-operator">AND Operator</a></li>
+                                    <li><a href="#or-operator">OR Operator</a></li>
+                                    <li><a href="#not-operator">NOT Operator</a></li>
+                                </ul>
+                                <li><a href="#if-then">If-Then Logic Format</a></li>
+                                <li><a href="#programmers">Boolean Logic for Programmers</a></li>
+                                <li><a href="#extra-symbols">Common Extra Symbols</a></li>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <ul>
+                                    <li><a href="#faq1">What applications does Boolean logic have in computer hardware?</a></li>
+                                    <li><a href="#faq2">What applications does Boolean logic have in computer software?</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>
