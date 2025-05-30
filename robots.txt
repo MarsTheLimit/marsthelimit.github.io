@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://marsthelimit.github.io/adsweb/sitemap.xml
+Sitemap: https://marsthelimit.github.io/sitemap.xml
 
 User-agent: *
-Disallow: https://marsthelimit.github.io/adsweb/index.html
+Disallow: https://marsthelimit.github.io/formula-article.html

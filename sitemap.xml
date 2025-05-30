@@ -2,28 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://marsthelimit.github.io/adsweb/</loc>
+        <loc>https://marsthelimit.github.io/</loc>
         <lastmod>2025-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/adsweb/logic-gates.html</loc>
+        <loc>https://marsthelimit.github.io/articles.html</loc>
         <lastmod>2025-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/adsweb/boolean-logic-explained.html</loc>
+        <loc>https://marsthelimit.github.io/logic-gates.html</loc>
         <lastmod>2025-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/adsweb/boolean-for-programmers.html</loc>
+        <loc>https://marsthelimit.github.io/boolean-logic-explained.html</loc>
+        <lastmod>2025-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://marsthelimit.github.io/boolean-for-programmers.html</loc>
+        <lastmod>2025-05-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://marsthelimit.github.io/transistors-on-breadboards</loc>
         <lastmod>2025-05-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
