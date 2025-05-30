@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Transistors are what make up logic gates. They perform the underlying Boolean operations in the blink of an eye. Learn how to make logic gates on breadboards." />
         <meta name="author" content="Boden Bensema" />
         <title>Make Logic Gates on a Breadboard: Easy Transistor Projects for Beginners</title>
         <!-- Favicon-->
@@ -51,14 +51,87 @@
         {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "",
+        "headline": "Make Logic Gates on a Breadboard: Easy Transistor Projects for Beginners",
         "author": {
             "@type": "Person",
             "name": "Boden Bensema"
         },
         "datePublished": "2025-05-28",
-        "description": "",
+        "description": "Transistors are what make up logic gates. They perform the underlying Boolean operations in the blink of an eye. Learn how to make logic gates on breadboards.",
         "mainEntityOfPage": "https://marsthelimit.github.io/transistors-on-breadboards.html"
+        }
+        </script>
+
+        <!-- Videos -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "VideoObject",
+            "name": "Simple Transistor Switch Tutorial",
+            "description": "Learn how to build a basic transistor switch circuit on a breadboard using common components.",
+            "thumbnailUrl": "https://img.youtube.com/vi/h9MDyaPbAYs/maxresdefault.jpg",
+            "uploadDate": "2025-05-28",
+            "embedUrl": "https://www.youtube.com/embed/h9MDyaPbAYs",
+            "publisher": {
+                "@type": "Organization",
+                "name": "MarsTheLimit",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://marsthelimit.github.io/src/favicon.ico"
+                }
+            }
+            },
+            {
+            "@type": "VideoObject",
+            "name": "NOT Gate with Transistors",
+            "description": "This video shows how to build a NOT logic gate using a single transistor on a breadboard.",
+            "thumbnailUrl": "https://img.youtube.com/vi/yU-i0wu1ECI/maxresdefault.jpg",
+            "uploadDate": "2025-05-28",
+            "embedUrl": "https://www.youtube.com/embed/yU-i0wu1ECI",
+            "publisher": {
+                "@type": "Organization",
+                "name": "MarsTheLimit",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://marsthelimit.github.io/src/favicon.ico"
+                }
+            }
+            },
+            {
+            "@type": "VideoObject",
+            "name": "AND Gate with Transistors",
+            "description": "Build an AND logic gate using two transistors on a breadboard. This video demonstrates how both inputs must be high for the output to activate.",
+            "thumbnailUrl": "https://img.youtube.com/vi/yoQ6OHSh_4E/maxresdefault.jpg",
+            "uploadDate": "2025-05-28",
+            "embedUrl": "https://www.youtube.com/embed/yoQ6OHSh_4E",
+            "publisher": {
+                "@type": "Organization",
+                "name": "MarsTheLimit",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://marsthelimit.github.io/src/favicon.ico"
+                }
+            }
+            },
+            {
+            "@type": "VideoObject",
+            "name": "OR Gate with Transistors",
+            "description": "This tutorial shows how to make an OR logic gate using two transistors in parallel on a breadboard.",
+            "thumbnailUrl": "https://img.youtube.com/vi/BzYGjhhYcWE/maxresdefault.jpg",
+            "uploadDate": "2025-05-28",
+            "embedUrl": "https://www.youtube.com/embed/BzYGjhhYcWE",
+            "publisher": {
+                "@type": "Organization",
+                "name": "MarsTheLimit",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://marsthelimit.github.io/src/favicon.ico"
+                }
+            }
+            }
+        ]
         }
         </script>
     </head>
@@ -121,7 +194,7 @@
                                 With no current at the base, the transistor is “off” and the current from the collector is unable to flow to the emitter.
                             </p>
                             <h4 class="fs-5 mb-4">BC547 Transistor Pinout</h4>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Pinout of an BC147 NPN Transistor" /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/bc547-transistor-pinout.png" alt="Pinout of an BC547 NPN Transistor" /></figure>
 
                             <h2 id="transistor-switch" class="fw-bolder mb-4 mt-5">How to Build a Simple Transistor Switch</h2>
                             <p class="fs-5 mb-4">To build a standard transistor switch, here are the steps:</p>
@@ -131,7 +204,7 @@
                                 <li>Connect the emitter to the positive side of an LED (with the negative side going to ground through a 220Ω resistor).</li>
                             </ul>
                             <p class="fs-5 mb-4">This may seem pretty confusing. To clarify, here's the schematic:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for transistor switch" /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/transistor-switch-schematic.png" alt="Schematic for transistor switch" /></figure>
                             <p class="fs-5 mb-4">In most schematics, GND will mean ground. We can apply this circuit in real life by using a <a target="_blank" href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all">breadboard</a>:</p>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/h9MDyaPbAYs"></iframe>
 
@@ -147,13 +220,13 @@
                                 previously. Then, by reversing the way the LED is connected and adding a 220-ohm resistor from 5V to the emitter, we create an inverter. 
                             </p>
                             <h4 class="fs-5 mb-4">Schematic</h4>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make a NOT gate with transistors" /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/not-gate-schematic.png" alt="Schematic for how to make a NOT gate with transistors" /></figure>
                             <h4 class="fs-5 mb-4">Breadboard Circuit</h4>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/yU-i0wu1ECI"></iframe>
 
                             <h3 id="and" class="fw-semibold mb-4 mt-5">How to Build an AND Gate With Transistors</h3>
                             <h4 class="fs-5 mb-4">Schematic</h4>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make an AND gate with transistors" /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/and-gate-schematic.png" alt="Schematic for how to make an AND gate with transistors" /></figure>
                             <p class="fs-5 mb-4">
                                 This schematic shows how the AND gate is made. In order for the 5V to get to ground, both transistors must be on. When they are, the current can pass 
                                 through them and the LED, turning the LED on.
@@ -166,7 +239,7 @@
 
                             <h3 id="or" class="fw-semibold mb-4 mt-5">How to Build an OR Gate With Transistors</h3>
                             <h4 class="fs-5 mb-4">Schematic</h4>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make an OR gate with transistors" /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="src/or-gate-schematic.png" alt="Schematic for how to make an OR gate with transistors" /></figure>
                             <p class="fs-5 mb-4">
                                 This circuit features two transistors wired to an LED in parallel. This way, if either of the transistors is active, the LED will light up, creating an OR gate.
                             </p>
@@ -253,7 +326,7 @@
                         <div class="card-header">Topic: Current</div>
                         <div class="card-body">Current, or electric current, is just a way of saying the flow of electricity within a circuit. Current is measured in Amperes (A).</div>
                     </div>
-                    <div class="card mb-4">
+                    <div style="top:5%" class="card mb-4">
                         <div class="card-header">Quick Note</div>
                         <div class="card-body">the pinout is demonstrated with the curved part of the transistor facing away</div>
                     </div>
