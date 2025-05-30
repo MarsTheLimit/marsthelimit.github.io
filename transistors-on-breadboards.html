@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Boden Bensema" />
+        <title>Make Logic Gates on a Breadboard: Easy Transistor Projects for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/transistors-on-breadboards.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What is the purpose of a transistor in a logic gate?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A transistor acts as a switch that turns on or off based on input voltage, which, based on the inputs and the way the transistors are connected, allows the current to flow to the output."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Can I make logic gates on a breadboard?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can build NOT, AND, OR, NAND, and NOR gates using basic components like BC547 transistors, resistors, and a breadboard."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What is the difference between a schematic and a breadboard circuit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A schematic is a visual map of how components are connected. A breadboard circuit is the physical, real-world version you build."
+            }
+            }
+        ]
+        }
+        </script>
+
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "",
+        "mainEntityOfPage": "https://marsthelimit.github.io/transistors-on-breadboards.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Make Logic Gates on a Breadboard: Easy Transistor Projects for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 29, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Circuit</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Digital Logic</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Boolean Logic</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="" alt="..." /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">
+                                Learning about transistors can greatly help when trying to understand the basic concept of logic gates and how they work. Similar to how learning the alphabet 
+                                is the first step to understanding how words sound, learning how transistors work is essential to 
+                                <a target="_blank" href="logic-gates.html">understanding how logic gates and computers work</a>. Transistors reveal the true 
+                                <a target="_blank" href="boolean-logic-explained.html">Boolean logic</a> behind logic gates, as well as how voltages in a circuit produce the Boolean logic. 
+                                Transistors can be a great visual way to understand logic gates. You can even build these logic gates yourself.
+                            </p>
+                            <h2 id="what-transistor-switch" class="fw-bolder mb-4 mt-5">What is a Transistor Switch?</h2>
+                            <p class="fs-5 mb-4">
+                                The most basic transistor circuit, making a switch with transistors, can have many uses. The way a transistor switch works is by allowing a small signal 
+                                (like from a sensor) to control a larger load, like an LED or motor. A transistor has 3 pins:
+                            </p>
+                            <ul class="fs-5 mb-4">
+                                <li>Base - acts as a switch</li>
+                                <li>Collector - where current flows in</li>
+                                <li>Emitter - where current flows out</li>
+                            </ul>
+                            <p class="fs-5 mb-4">
+                                When a small current is present at the base, then the transistor turns to the “on” state, which allows the current present at the collector to flow to the emitter.
+                                With no current at the base, the transistor is “off” and the current from the collector is unable to flow to the emitter.
+                            </p>
+                            <h4 class="fs-5 mb-4">BC547 Transistor Pinout</h4>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Pinout of an BC147 NPN Transistor" /></figure>
+
+                            <h2 id="transistor-switch" class="fw-bolder mb-4 mt-5">How to Build a Simple Transistor Switch</h2>
+                            <p class="fs-5 mb-4">To build a standard transistor switch, here are the steps:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>Connect one side of a 1KΩ resistor (R1) to the base pin and the other side to a switch.</li>
+                                <li>Connect the collector to +5V.</li>
+                                <li>Connect the emitter to the positive side of an LED (with the negative side going to ground through a 220Ω resistor).</li>
+                            </ul>
+                            <p class="fs-5 mb-4">This may seem pretty confusing. To clarify, here's the schematic:</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for transistor switch" /></figure>
+                            <p class="fs-5 mb-4">In most schematics, GND will mean ground. We can apply this circuit in real life by using a <a target="_blank" href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all">breadboard</a>:</p>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/yU-i0wu1ECI"></iframe>
+
+                            <h2 id="transistor-gate" class="fw-bolder mb-4 mt-5">Building Logic Gates with Transistors</h2>
+                            <p class="fs-5 mb-4">
+                                Logic gates are simply transistors connected either in series or parallel. There can be any number of transistors in a logic gate, depending on how many inputs 
+                                you want on your gate. Below are the most basic logic gates.
+                            </p>
+
+                            <h3 id="not" class="fw-semibold mb-4 mt-5">How to Build an NOT Gate With Transistors</h3>
+                            <p class="fs-5 mb-4">
+                                To build a NOT gate, you need 1 transistor. This gate outputs the inverse of the input. To make this gate, we can start by using the transistor switch we made
+                                previously. Then, by reversing the way the LED is connected and adding a 220-ohm resistor from 5V to the emitter, we create an inverter. 
+                            </p>
+                            <h4 class="fs-5 mb-4">Schematic</h4>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make a NOT gate with transistors" /></figure>
+                            <h4 class="fs-5 mb-4">Breadboard Circuit</h4>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/yU-i0wu1ECI"></iframe>
+
+                            <h3 id="and" class="fw-semibold mb-4 mt-5">How to Build an AND Gate With Transistors</h3>
+                            <h4 class="fs-5 mb-4">Schematic</h4>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make an AND gate with transistors" /></figure>
+                            <p class="fs-5 mb-4">
+                                This schematic shows how the AND gate is made. In order for the 5V to get to ground, both transistors must be on. When they are, the current can pass 
+                                through them and the LED, turning the LED on.
+                            </p>
+                            <h4 class="fs-5 mb-4">Breadboard Circuit</h4>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/yU-i0wu1ECI"></iframe>
+                            <p class="fs-5 mb-4">
+                                As you can see, the LED lights up only when both inputs are high.
+                            </p>
+
+                            <h3 id="or" class="fw-semibold mb-4 mt-5">How to Build an OR Gate With Transistors</h3>
+                            <h4 class="fs-5 mb-4">Schematic</h4>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="Schematic for how to make an OR gate with transistors" /></figure>
+                            <p class="fs-5 mb-4">
+                                This circuit features two transistors wired to an LED in parallel. This way, if either of the transistors is active, the LED will light up, creating an OR gate.
+                            </p>
+                            <h4 class="fs-5 mb-4">Breadboard Circuit</h4>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/BzYGjhhYcWE"></iframe>
+                            <p class="fs-5 mb-4">
+                                If either input goes high, the LED lights up.
+                            </p>
+
+                            <h3 id="nand-nor" class="fw-semibold mb-4 mt-5">The NAND and NOR Gates</h3>
+                            <p class="fs-5 mb-4">
+                                These gates are very similar to their inverses, the AND and OR gates. To make these gates, you would simply need to take the output of the AND or OR gate and feed it into a NOT gate to generate your NAND or NOR gate.
+                            </p>
+
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">
+                                Understanding transistors is a foundational skill for anyone interested in electronics or computer systems. By learning how to build simple circuits like transistor switches and logic 
+                                gates, you gain insight into how complex digital systems are constructed from basic components. These small building blocks power everything from calculators to
+                                smartphones. As you continue experimenting with transistors and logic gates, you'll be well on your way to mastering the language of modern electronics. A great
+                                next step is to explore deeper into computer architecture.
+                            </p>
+
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">What is the purpose of a transistor in a logic gate?</div>
+                            <div class="card-body">A transistor acts as a switch that turns on or off based on input voltage, which, based on the inputs and the way the transistors are connected, allows the current to flow to the output.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">Can I make logic gates on a breadboard?</div>
+                            <div class="card-body">Yes. You can build NOT, AND, OR, NAND, and NOR gates using basic components like BC547 transistors, resistors, and a breadboard.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq3" class="card-header">What is the difference between a schematic and a breadboard circuit?</div>
+                            <div class="card-body">A schematic is a visual map of how components are connected. A breadboard circuit is the physical, real-world version you build.</div>
+                            </div>
+                            <h2 id="special-thanks" class="fw-bolder mb-4 mt-5">Special Thanks to Jameco</h2>
+                            <p class="fs-5 mb-4">
+                                This is a little thank you to <a href="jameco.com" target="_blank">jameco.com</a> for supplying me with all my electronic needs for projects like this one.
+                                I get most of my parts through this website, and they have yet to fail me in getting me my parts quickly, reliably, and easily. I would recommend using this
+                                site to satisfy all your electronic projects' needs, as they are honest and trustworthy.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#what-transistor-switch">What is a Transistor Switch?</a></li>
+                                <li><a href="#transistor-switch">How to Build a Simple Transistor Switch</a></li>
+                                <li><a href="#transistor-gate">Building Logic Gates with Transistors</a></li>
+                                <ul>
+                                    <li><a href="#not">How to Build an NOT Gate With Transistors</a></li>
+                                    <li><a href="#and">How to Build an AND Gate With Transistors</a></li>
+                                    <li><a href="#or">How to Build an OR Gate With Transistors</a></li>
+                                    <li><a href="#nand-nor">The NAND and NOR Gates</a></li>
+                                </ul>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <ul>
+                                    <li><a href="#faq1">What is the purpose of a transistor in a logic gate?</a></li>
+                                    <li><a href="#faq2">Can I make logic gates on a breadboard?</a></li>
+                                    <li><a href="#faq3">What is the difference between a schematic and a breadboard circuit?</a></li>
+                                </ul>
+                                <li><a href="#special-thanks">Special Thanks to Jameco</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Topic: Current</div>
+                        <div class="card-body">Current, or electric current, is just a way of saying the flow of electricity within a circuit. Current is measured in Amperes (A).</div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">Quick Note</div>
+                        <div class="card-body">the pinout is demonstrated with the curved part of the transistor facing away</div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">Try It!</div>
+                        <div class="card-body">What happens when you try flipping the 5V and GND connections? Breadboards make circuits very easy to change to experiment and fix errors.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>
