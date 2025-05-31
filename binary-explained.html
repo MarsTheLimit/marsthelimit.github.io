@@ -1,3 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Binary and Hexadecimal explained for beginners. Explore decimal to binary conversions, binary to hex, and hex to decimal. Includes examples." />
+        <meta name="author" content="Boden Bensema" />
+        <title>Binary and Hexadecimal Conversions, Examples, and Tips for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/binary-explained.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "Where can I apply this knowledge of digital logic?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To learn more about how computers use binary and where you can apply your knowledge, try taking a look at this article on how to design computer architecture."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What are some next steps to dive deeper into binary operations?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you are looking for more information on binary operations, try reading our article about how to do arithmetic with binary numbers."
+            }
+            }
+        ]
+        }
+        </script>
+
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Binary and Hexadecimal Conversions, Examples, and Tips for Beginners",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "Binary and Hexadecimal explained for beginners. Explore decimal to binary conversions, binary to hex, and hex to decimal. Includes examples.",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/binary-explained.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">MarsTheLimit</a>
@@ -12,3 +70,167 @@
                 </div>
             </div>
         </nav>
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Binary and Hexadecimal Conversions, Examples, and Tips for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 30, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Digital Logic</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Binary</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Hexadecimal</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="" alt="..." /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">
+                                Binary numbers are commonly referenced in the digital age, but many still don’t understand how they work. But what exactly is it? The binary number system explained simply is a base-2 number system. Our number system (1, 2, 3, 4, 5, etc.) is a base-10 system. Base-2 means that it only has two possible digits: 1 or 0. This is called true/false logic. If we have a perfectly good number system already in place, then why do we need a binary system? The reason lies in understanding how computers use binary with digital logic.
+                            </p>
+                            <h2 id="digital-electronics" class="fw-bolder mb-4 mt-5">Digital Electronics</h2>
+                            <p class="fs-5 mb-4">
+                                When someone says their device is digital, that means their device runs on <a target="_blank" href="boolean-logic-explained.html">Boolean logic</a>. In the simplest terms, Boolean logic is a light switch. It is either on or off. There's no in between. <a target="_blank" href="logic-gates.html">Logic gates</a> operate using Boolean logic, where inputs and outputs are either true or false. Essentially, digital computation means Boolean logic. You may have seen a connection between what you know about the binary system so far and Boolean logic. Boolean logic can only have 2 different states (on, off, true, false), and binary can also only have two states. This is known as digital logic. When I say digital logic is processing ones or zeroes, they aren’t literally processing ones and zeroes. A 1 represents a voltage running through a wire that is higher than the threshold voltage in a circuit. The threshold voltage is the minimum voltage that can be considered a “1”. Anything below, and it's a 0. 
+                            </p>
+                            <p class="fs-5 mb-4">
+                                This creates 2 states, and is also why we use a base-2 system and not the common base-10. In digital logic, we don’t differentiate between 4 and 5 volts. This is <a target="_blank" href="transistors-on-breadboards.html">how transistors work</a>. Let’s dive into how to convert binary to decimal.
+                            </p>
+
+                            <h2 id="binary-decimal" class="fw-bolder mb-4 mt-5">How to Convert Binary to Decimal</h2>
+                            <p class="fs-5 mb-4">
+                                To learn how to convert decimal numbers to binary, it would be useful to realize how to convert binary numbers to decimal first. Let's say we are dealing with 
+                                the binary number 1101. First, we take into account the number of digits in this number, which is 4. Then, from right to left, we add up the values according to 
+                                their place in the number. The formula is:
+                            </p>
+                            <pre class="fs-5 fw-lighter mb-4">Bit value &#x2022; 2<sup>position</sup></pre>
+                            <p class="fs-5 mb-4">
+                                Starting from the rightmost bit (position 0) and using the value from that bit. In our example number, this would look like 
+                            </p>
+                            <pre class="fs-5 fw-lighter mb-4">1 &#x2022; 2<sup>0</sup></pre>
+                            <p class="fs-5 mb-4">
+                                because the digit value is 1, and we are at the first digit spot, giving us 2<sup>0</sup>. If you're confused about why it is 2<sup>0</sup>, you can think about how we determine 
+                                decimal numbers. For the one place, we would use a number times 100, which equals the number we started with (5 &#x2022; 100 = 5). Continuing with our binary number, 
+                                we get a full equation of 
+                            </p>
+                            <pre class="fs-5 fw-lighter mb-4">1101 = 1 &#x2022; 2³ + 1 &#x2022; 2² + 0 &#x2022; 2¹ + 1 &#x2022; 2⁰ = 8 + 4 + 0 + 1 = 13</pre>
+                            <p class="fs-5 mb-4">
+                                This works with any binary number. This number has four digits, so it can have 2<sup>4</sup> different combinations. One of those combinations is 0, so a four-digit binary 
+                                number can be any whole number from 0 - 15. Here's a quick chart to help visualize the binary conversion from decimal
+                            </p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="How to convert binary to decimal" /></figure>
+
+                            <h2 id="decimal-binary" class="fw-bolder mb-4 mt-5">How to Convert Decimal to Binary</h2>
+                            <p class="fs-5 mb-4">To convert decimal numbers to binary, we will look at the number 53. The method for this is dividing this number by two, and keeping the remainder separate from the result. Then, by looking at the remainders, we get the binary number. This is how it would look to perform this operation on 53:</p>
+                            <pre class="fs-5 fw-lighter mb-4">53 ÷ 2 = 26 remainder 1
+26 ÷ 2 = 13 remainder 0
+13 ÷ 2 = 6 remainder 1
+6 ÷ 2 = 3 remainder 0
+3 ÷ 2 = 1 remainder 1
+1 ÷ 2 = 0 remainder 1
+</pre>
+                            <p class="fs-5 mb-4">Then, by looking at the remainders, the first binary digit is the last remainder, which was 1. Then we take the remainders in reverse order to get the number of</p>
+                            <pre class="fs-5 fw-lighter mb-4">110101</pre>
+                            <p class="fs-5 mb-4">We can double-check this work by converting this number back into decimal with the previous equation:</p>
+                            <pre class="fs-5 fw-lighter mb-4">1 &#x2022; 2<sup>5</sup> + 1 &#x2022; 2<sup>4</sup> + 0 &#x2022; 2<sup>3</sup> + 1 &#x2022;  2<sup>2</sup> + 0 &#x2022; 2<sup>1</sup> + 1 &#x2022;  2<sup>0</sup> = 32 + 16 + 0 + 4 + 0 + 1 = 53</pre>
+                            <p class="fs-5 mb-4">As you work more with binary numbers, it gets easier to find patterns in your head, and you can do almost all problems quickly and efficiently. My Grandma used to work at IBM, and she was able to add and subtract binary (in her head) faster than decimal. Practice helps a lot in all areas of life, but especially in math and science.</p>
+
+
+                            <h2 id="hex" class="fw-bolder mb-4 mt-5">Hexadecimal Explained Simply</h2>
+                            <p class="fs-5 mb-4">Hexadecimal (also called hex) is a base-16 number system, and it is used for simplifying binary code to a more readable (but still very difficult for large programs) format for humans. The possible characters are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Because the A-F digits aren't traditionally numbers, understanding hexadecimal as a beginner can be tricky. Here's a conversion table for the hex value and the corresponding decimal value:</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="" alt="hexadecimal to binary conversion table" /></figure>
+                            <p class="fs-5 mb-4">Choosing a base-16 system may seem odd, but think back to how many combinations 2<sup>4</sup> had. It had 16 total different combinations. Hexadecimal also has 16 total combinations. This makes it very easy to convert a binary number to hexadecimal. If you choose any 1 hexadecimal digit, let's say A, you can convert that directly into a 4-digit binary number. The value for the hex digit A in decimal is 10, and in binary, 10 is 1010. But let's say you were dealing with a byte of information, AA. Because we know an 'A' in hexadecimal is 1010, then this byte would equal 10101010 in binary. Knowing how to convert a hexadecimal number to binary is very important. This is because converting a hexadecimal number into decimal is a complicated process. We can still apply the same equation of binary to decimal, but we just change the base (2<sup>binary place</sup>) to 16.</p>
+
+                            <h3 id="hex-decimal" class="fw-bolder mb-4 mt-5">How to Convert Hexadecimal to Decimal</h3>
+                            <p class="fs-5 mb-4">To start, let's use AA. To convert AA to binary:</p>
+                            <pre class="fs-5 fw-lighter mb-4">A (10) &#x2022; 16<sup>1</sup> + A (10) &#x2022; 16<sup>0</sup> = 160 + 10 = 170</pre>
+                            <p class="fs-5 mb-4">This example was on the easier side for hexadecimal. With more digits, however, it gets more complex. For AAAA, you would have to do</p>
+                            <pre class="fs-5 fw-lighter mb-4">10 &#x2022; 16<sup>3</sup> + 10 &#x2022; 16<sup>2</sup> + 10 &#x2022; 16<sup>1</sup> + 10 &#x2022; 16<sup>0</sup>  = 40690 + 2560 + 160 + 10 = 43690</pre>
+                            <p class="fs-5 mb-4">For this reason, hexadecimal is primarily used to shorten the length of binary numbers. When I am calculating a number in hexadecimal, I typically convert the number to binary first and then calculate the exact value.</p>
+
+                            <h3 id="decimal-hex" class="fw-bolder mb-4 mt-5">How to Convert Decimal to Hexadecimal</h3>
+                            <p class="fs-5 mb-4">As you probably could have guessed, to convert a decimal number to hexadecimal, you would divide the decimal number by 16 and separate the remainder until you get to 0. For a quick example, 53 would look like</p>
+                            <pre class="fs-5 fw-lighter mb-4">53 ÷ 16 = 3 remainder 5
+3 ÷ 16 = 0 remainder 3
+</pre>
+                            <p class="fs-5 mb-4">And the result would be 05.</p>
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">
+                                In conclusion, the binary number system and hexadecimal number system are both important to learn because of their prevalence in digital computations and data. 
+                                In understanding how computers work, you would get lost without a basic understanding of binary numbers. Learning how to do basic arithmetic with binary and 
+                                hexadecimal numbers is a fantastic way to get practice working with these systems. Computer architecture is a great next (but very big) step in applying the 
+                                binary number system in real life. Binary and hexadecimal are essential number systems in computing. Binary represents the fundamental on/off nature of digital 
+                                electronics, while hexadecimal offers a compact way to handle binary values. Mastering conversions between these systems helps in understanding data storage, 
+                                computer architecture, and programming.
+                            </p>
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">Where can I apply this knowledge of digital logic?</div>
+                            <div class="card-body">To learn more about how computers use binary and where you can apply your knowledge, try taking a look at this article on how to design computer architecture.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">What are some next steps to dive deeper into binary operations?</div>
+                            <div class="card-body">If you are looking for more information on binary operations, try reading our article about how to do arithmetic with binary numbers.</div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#digital-electronics">Digital Electronics</a></li>
+                                <li><a href="#binary-decimal">How to Convert Binary to Decimal</a></li>
+                                <li><a href="#decimal-binary">How to Convert Decimal to Binary</a></li>
+                                <li><a href="#hex">Hexadecimal Explained Simply</a></li>
+                                <li><a href="#hex-decimal">How to Convert Hexadecimal to Decimal</a></li>
+                                <li><a href="#decimal-hex">How to Convert Decimal to Hexadecimal</a></li>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <ul>
+                                    <li><a href="#faq1">Where can I apply this knowledge of digital logic?</a></li>
+                                    <li><a href="#faq2">What are some next steps to dive deeper into binary operations?</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                     <div class="card mb-4">
+                        <div class="card-header">Nibble vs. Byte</div>
+                        <div class="card-body">A 4-digit binary number (or a one-digit hex number) is called a nibble, and an 8-digit binary number (or a two-digit hex number) is called a byte.</div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">Quick Tip</div>
+                        <div class="card-body">When converting to decimal from hexadecimal, you must replace the letter digits to their corresponding decimal values according to the chart above. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="privacy-policy.html" class="text-white text-decoration-underline">Privacy Policy</a></p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>
