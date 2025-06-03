@@ -5,3 +5,8 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+function search() {
+    query = document.getElementById("search-text").value;
+    window.location = "articles.html?q=" + query;
+}
