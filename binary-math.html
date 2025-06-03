@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Learn how to add and subtract binary numbers with the two's complement. Easy how to tutorial for beginners. Learn how to count, add, and subtract in the binary base-2 number system." />
         <meta name="author" content="Boden Bensema" />
-        <title>How to Add and Subtract Binary Numbers With Two’s Complement for Beginners</title>
+        <title>How to Add and Subtract Binary Numbers With Two's Complement for Beginners</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
         <link rel="canonical" href="https://marsthelimit.github.io/binary-math.html" />
@@ -28,10 +28,10 @@
             },
             {
             "@type": "Question",
-            "name": "How does two’s complement work in binary subtraction?",
+            "name": "How does two's complement work in binary subtraction?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Two’s complement is a method that lets you subtract binary numbers by turning the number to be subtracted into a negative and then adding it. Flip the bits of the number, add 1, and then perform regular binary addition."
+                "text": "Two's complement is a method that lets you subtract binary numbers by turning the number to be subtracted into a negative and then adding it. Flip the bits of the number, add 1, and then perform regular binary addition."
             }
             }
         ]
@@ -94,7 +94,7 @@
                             <p class="fs-5 mb-4">Understanding binary math is a key concept in computer science, digital electronics, and programming. Unlike the base-10 system that you use every day, binary (base-2) arithmetic can feel confusing at first. But with a little practice, performing binary addition and binary subtraction becomes easy to understand. These operations are necessary when trying to learn how computers process data and perform calculations at the most basic level.</p>
                             <h2 id="basics" class="fw-bolder mb-4 mt-5">The Basics of Math With Binary</h2>
                             <h3 id="counting" class="fw-bolder mb-4 mt-5">How to Count in Binary</h3>
-                            <p class="fs-5 mb-4">Binary counting is similar to decimal counting, but in a base-2 number system. There are only two digits in binary: 1 and 0. When counting in binary, we start at the lowest digit (0) and go to the highest digit (1). When we reach 1, we carry a 1 to the next column on the left. To demonstrate, let’s count from 0 to 4 in binary:</p>
+                            <p class="fs-5 mb-4">Binary counting is similar to decimal counting, but in a base-2 number system. There are only two digits in binary: 1 and 0. When counting in binary, we start at the lowest digit (0) and go to the highest digit (1). When we reach 1, we carry a 1 to the next column on the left. To demonstrate, let's count from 0 to 4 in binary:</p>
                             <pre class="fw-bold mb-4">	000 (0)
 	001 (1)
 	010 (2) carry over to the next column
@@ -103,20 +103,20 @@
                             <p class="fs-5 mb-4">In binary, carries happen every two numbers, as there are 2 possible digits. Like the decimal system, the carry happens one column to the left.</p>
 
                             <h3 id="addition" class="fw-bolder mb-4 mt-5">How to Add in Binary</h3>
-                            <p class="fs-5 mb-4">Binary math is very similar to decimal math. Noting this, let’s do a quick review of decimal addition. Our example will be:</p>
+                            <p class="fs-5 mb-4">Binary math is very similar to decimal math. Noting this, let's do a quick review of decimal addition. Our example will be:</p>
                             <pre class="fw-bold mb-4">53 + 29</pre>
-                            <p class="fs-5 mb-4">To start, let’s take a look at the ones column. 3 + 9 equals 12. Because 12 is bigger than 9 (base-10), we are going to have to carry the 1 over to the tens column. To get the final result, we add 5 + 2 + 1 and get 8. Our final answer:</p>
+                            <p class="fs-5 mb-4">To start, let's take a look at the ones column. 3 + 9 equals 12. Because 12 is bigger than 9 (base-10), we are going to have to carry the 1 over to the tens column. To get the final result, we add 5 + 2 + 1 and get 8. Our final answer:</p>
                             <pre class="fw-bold mb-4">53 + 29</pre>
-                            <p class="fs-5 mb-4">For our example in binary, let’s use</p>
+                            <p class="fs-5 mb-4">For our example in binary, let's use</p>
                             <pre class="fw-bold mb-4">0101 + 1111</pre>
-                            <p class="fs-5 mb-4">Adding in binary can get to be complex when there’s a lot of carrying, so let’s take a look at a way to write this out simply.</p>
+                            <p class="fs-5 mb-4">Adding in binary can get to be complex when there's a lot of carrying, so let's take a look at a way to write this out simply.</p>
                             <ul class="fs-5 mb-4">
                                 <li>Start from the rightmost bit (least significant bit)</li>
                                 <li>Add the digits together. If the sum is 2 (1+1), carry a one to the next column.</li>
                                 <li>If the sum with the carry is 3 (1+1+1), write down a 1 and carry a 1.</li>
                                 <li>Repeat for all digits.</li>
                             </ul>
-                            <p class="fs-5 mb-4">Looking at our example, let’s put this into practice:</p>
+                            <p class="fs-5 mb-4">Looking at our example, let's put this into practice:</p>
                             <pre class="fw-bold mb-4">    1
     1
 <u>+     </u>
@@ -137,7 +137,7 @@
                             <pre class="fw-bold mb-4">5 (0101) + 15 (1111) = 20 (10100)</pre>
 
                             <h3 id="subtraction" class="fw-bolder mb-4 mt-5">Binary Subtraction Using Two's Complement</h3>
-                            <p class="fs-5 mb-4">Binary subtraction utilizes something called the two’s complement. The two’s complement is a way of representing a positive or a negative in a binary number based on the leading (leftmost) digit. In two’s complement:</p>
+                            <p class="fs-5 mb-4">Binary subtraction utilizes something called the two's complement. The two's complement is a way of representing a positive or a negative in a binary number based on the leading (leftmost) digit. In two's complement:</p>
                             <ul class="fs-5 mb-4">
                                 <li>A leading 0 is a positive number.</li>
                                 <li>A leading 1 is a negative number.</li>
@@ -148,9 +148,9 @@
     <i>positive: leading bit is 0</i>
 1111
     <i>negative: leading bit is 1</i></pre>
-                            <p class="fs-5 mb-4">Using the two’s complement, we can turn addition into subtraction like so:</p>
+                            <p class="fs-5 mb-4">Using the two's complement, we can turn addition into subtraction like so:</p>
                             <pre class="fw-bold mb-4">5 + -3 = 2</pre>
-                            <p class="fs-5 mb-4">To find the two’s complement of a number, we need to do the following:</p>
+                            <p class="fs-5 mb-4">To find the two's complement of a number, we need to do the following:</p>
                             <ul class="fs-5 mb-4">
                                 <li>Invert each bit (perform a <a href="boolean-logic-explained.html" target="_blank">NOT Boolean operation)</a></li>
                                 <li>Add one to the resulting number</li>
@@ -162,7 +162,7 @@
                             <p class="fs-5 mb-4">The leading bit is still a 1, but now we ended up with a 6-digit number. If we take away this extra bit, we get two in both operations. For our purposes, we will simply ignore this bit and say we got 00010.</p> <!--This makes more sense when looking at a binary adder.-->
 
                             <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
-                            <p class="fs-5 mb-4">Binary math may seem unfamiliar, but it uses the same concepts as base-10 math does. Once you understand carrying, two’s complement, and base conversions, you can add or subtract in any number system. A great next step would be to try adding and subtracting in hexadecimal on your own. If you’re unfamiliar with hexadecimal, check out this article that explains binary and hexadecimal for beginners. The best way to get better at these sorts of things is to find what works best for you. Try new ways to add or subtract binary numbers and see what works best for you.</p>
+                            <p class="fs-5 mb-4">Binary math may seem unfamiliar, but it uses the same concepts as base-10 math does. Once you understand carrying, two's complement, and base conversions, you can add or subtract in any number system. A great next step would be to try adding and subtracting in hexadecimal on your own. If you're unfamiliar with hexadecimal, check out this article that explains binary and hexadecimal for beginners. The best way to get better at these sorts of things is to find what works best for you. Try new ways to add or subtract binary numbers and see what works best for you.</p>
                             <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
 
                             <div class="card mb-4">
@@ -170,8 +170,8 @@
                             <div class="card-body">The easiest way to add binary numbers is to align the digits, add from right to left, and carry over whenever you get 1 + 1 (which equals 10 in binary). Just like decimal addition, carries move to the next digit to the left.</div>
                             </div>
                             <div class="card mb-4">
-                                <div id="faq2" class="card-header">How does two’s complement work in binary subtraction?</div>
-                            <div class="card-body">Two’s complement is a method that lets you subtract binary numbers by turning the number to be subtracted into a negative and then adding it. Flip the bits of the number, add 1, and then perform regular binary addition.</div>
+                                <div id="faq2" class="card-header">How does two's complement work in binary subtraction?</div>
+                            <div class="card-body">Two's complement is a method that lets you subtract binary numbers by turning the number to be subtracted into a negative and then adding it. Flip the bits of the number, add 1, and then perform regular binary addition.</div>
                             </div>
                         </section>
                     </article>
@@ -197,13 +197,13 @@
                                 <ul>
                                     <li><a href="#counting">How to Count in Binary</a></li>
                                     <li><a href="#addition">How to Add in Binary</a></li>
-                                    <li><a href="#subtraction">Binary Subtraction Using Two’s Complement</a></li>
+                                    <li><a href="#subtraction">Binary Subtraction Using Two's Complement</a></li>
                                 </ul>
                                 <li><a href="#conclusion">Conclusion</a></li>
                                 <li><a href="#faq">People Also Ask</a></li>
                                 <li><ul>
                                     <li><a href="#faq1">What is the easiest way to add binary numbers?</a></li>
-                                    <li><a href="#faq2">How does two’s complement work in binary subtraction?</a></li>
+                                    <li><a href="#faq2">How does two's complement work in binary subtraction?</a></li>
                                 </ul></li>
                             </ul>
                         </div>
