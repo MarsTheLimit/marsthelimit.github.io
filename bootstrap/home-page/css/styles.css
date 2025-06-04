@@ -77,8 +77,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #64a19d;
-  --bs-link-hover-color: #50817e;
+  --bs-link-color: #3039b8;
+  --bs-link-hover-color: #1e2479;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #faf4e0;
 }
@@ -2849,11 +2849,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #1e2479;
+  --bs-btn-border-color: #1e2479;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #00a8f3;
+  --bs-btn-hover-border-color: #00a8f3;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #50817e;

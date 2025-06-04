@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Learn how to apply logic gates in real life through logic gate ICs and shift regsiters. Shift registers are made from logic gates." />
+        <meta name="author" content="Boden Bensema" />
+        <title>Reading Datasheets and Making Real-Life Circuits for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.github.io/real-life-logic-circuits.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "Why do you use Jameco.com to buy parts for your circuit projects?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Jameco is based in the United States, and they have always been reliable and on time. They have pretty much everything I will need for my projects, and with good prices as well."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What do I do if I can’t figure out how to solve a problem with my circuit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Jameco is based in the United States, and they have always been reliable and on time. They have pretty much everything I will need for my projects, and with good prices as well."
+            }
+            }
+        ]
+        }
+        </script>
+
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Reading Datasheets and Making Real-Life Circuits for Beginners",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "Learn how to apply logic gates in real life through logic gate ICs and shift regsiters. Shift registers are made from logic gates.",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/real-life-logic-circuits.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="articles.html">Articles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Reading Datasheets and Making Real-Life Circuits for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 28, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Digital Logic</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Logic Gates</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Breadboard</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <!-- <figure class="mb-4"><img class="img-fluid rounded" src="" alt="" /></figure> -->
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">After learning about basic logic gates, such as AND, OR, and NOT, you may wonder what practical steps to take next. How do you go from abstract logic tables to building real-world circuits on a breadboard? What do all those pins and diagrams in a datasheet mean?</p>
+                            <p class="fs-5 mb-4">In this guide, we’ll walk you through the essentials of reading datasheets and pinouts, identifying what each pin does, and using logic gate ICs to build actual circuits. You’ll also learn the difference between various IC types (like 74HC08 vs. 74LS08), how to wire them up properly, and even explore shift registers for more complex logic functions.</p>
+                             <p class="fs-5 mb-4">Whether you're a beginner in electronics or a hobbyist looking to move from theory to hands-on projects, this tutorial will help you confidently use logic gate ICs on a breadboard and understand what’s happening behind the scenes. Let’s get right into it!</p>
+                            <h2 id="reading-datasheet" class="fw-bolder mb-4 mt-5">How to Read Datasheets and Pinouts</h2>
+                            <p class="fs-5 mb-4">In this section, we’ll explore how to read datasheets. Take a look at the <a target="_blank" href="https://www.jameco.com/Jameco/Products/ProdDS/46375.pdf">AND logic gate’s datasheet (the 74LS08)</a>. This datasheet includes a few important parts we will be taking a look at:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>Connection Diagram - shows the labels for the pins on the IC </li>
+                                <li>Function Table - tells us how to use the IC's pins according to their labels</li>
+                                <li>Recommended Operating Conditions - tells us what voltages to use so we don’t ruin the IC</li>
+                            </ul>
+                            <h3 id="connection-diagram" class="fw-bolder mb-4 mt-5">Connection Diagram</h3>
+                            <p class="fs-5 mb-4">Looking at the 74LS08’s datasheet, we see that there are 4 AND gates drawn into the Connection Diagram. They each have two inputs and one output:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>A1 - Input “A” of the first AND logic gate of the IC</li>
+                                <li>B1 - Input “B” of the first AND gate</li>
+                                <li>Y1 - Output “Y” of the first gate</li>
+                            </ul>
+                            <p class="fs-5 mb-4">There are also the V<sub>CC</sub> and the GND pins. V<sub>CC</sub> is the supply voltage, and GND is “ground,” or 0 volts.</p>
+
+                            <h3 id="function-table" class="fw-bolder mb-4 mt-5">Function Table</h3>
+                            <p class="fs-5 mb-4"></p>
+                            <ul class="fs-5 mb-4">
+                                <li>The inputs</li>
+                                <ul>
+                                    <li>A - for the pins labeled A1, A2, etc.</li>
+                                    <li>B - for pins labeled B1, B2, etc.</li>
+                                </ul>
+                                <li>The outputs</li>
+                                <ul>
+                                    <li>Y - for pins labeled Y1 through Y4</li>
+                                </ul>
+                            <p class="fs-5 mb-4">Each column corresponds to a pin on the connection diagram.</p>
+
+                            <h3 id="op-conditions" class="fw-bolder mb-4 mt-5">Recommended Operating Conditions</h3>
+                            <p class="fs-5 mb-4">These are what tell us the safe voltages and temperatures to use with this IC. For the first row, they have the minimum and maximum voltages for the voltage supply. Going over 5.25V may cause damage to the IC. Then there are a few more rows, of which two we are going to look at:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>V<sub>IH</sub> - Minimum logic input to be considered logic level high (2V)</li>
+                                <li>V<sub>IL</sub> - Maximum logic input to be considered logic level low (0.8V)</li>
+                            </ul>
+                            <p class="fs-5 mb-4">As long as our high inputs are more than 2V (but less than 5.25V) and our low inputs are less than 0.8V, then we should be able to properly use this IC. When learning how to use datasheets, these are the 3 best sections to look at.</p>
+
+                            <h2 id="different-types" class="fw-bolder mb-4 mt-5">Why are there Different Types of ICs for Logic Gates</h2>
+                            <p class="fs-5 mb-4">There are two main types of AND gates:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>74LS08 <i>We looked at this one's datasheet</i></li>
+                                <li>74HC08</li>
+                            </ul>
+                            <p class="fs-5 mb-4">They both are AND gates, but they have one small difference: 74<i>HC</i>08 and 74<i>LS</i>08. The HC stands for High-Speed CMOS Logic, and the LS stands for Low Power Schottky. The main differences are outlined below.</p>
+                            <table class="d-table">
+                                <tr class="d-table-row">
+                                    <th>Feature</th>
+                                    <th>74LS08 (Low Power Schottky)</th>
+                                    <th>74HC08 (High Speed CMOS)</th>
+                                </tr>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>Moderate</td>
+                                    <td>Very Fast</td>
+                                </tr>
+                                <tr>
+                                    <td>Logic Level High</td>
+                                    <td>2.0V</td>
+                                    <td>3.5V</td>
+                                </tr>
+                                <tr>
+                                    <td>Input Voltage Range</td>
+                                    <td>2V-6V</td>
+                                    <td>2V-6V</td>
+                                </tr>
+                                <tr>
+                                    <td>Power Efficiency</td>
+                                    <td>Moderate</td>
+                                    <td>High</td>
+                                </tr>
+                            </table>
+                            <p class="fs-5 mb-4">The biggest difference between these two types of ICs is the logic level high threshold and the speed of these devices. It may cause problems when using HC and LS devices interchangeably in a project.</p>
+
+                            <h2 id="ics-breadboard" class="fw-bolder mb-4 mt-5">How to Use Logic Gate ICs On a Breadboard</h2>
+                            <p class="fs-5 mb-4">There are logic gate ICs for every type of logic gate. Here’s a rundown for the most commonly used logic gate ICs for each gate (assuming you prefer HC over LS) and the link to buy them from my favorite and most trusted site, <a href="https://jameco.com" target="_blank">jameco.com:</a></p>
+                            <ul class="fs-5 mb-4">
+                                <li>74HC04 NOT gate Logic IC - <a href="https://www.jameco.com/z/74HC04-Major-Brands-IC-74HC04-Hex-Inverter_45209.html" target="_blank">Buy on Jameco</a></li>
+                                <li>74HC02 NOR Logic IC - <a href="https://www.jameco.com/z/74HC02-Major-Brands-IC-74HC02-QUAD-2-INPUT-POSITIVE-NOR-GATE_45188.html" target="_blank">Buy on Jameco</a></li>
+                                <li>74HC00 NAND Logic IC - <a href="https://www.jameco.com/z/74HC00-Major-Brands-IC-74HC00-QUAD-2-INPUT-NAND-GATE_45161.html" target="_blank">Buy on Jameco</a></li>
+                                <li>74HC08 AND Logic IC - <a href="https://www.jameco.com/z/74HC08-Major-Brands-IC-74HC08-QUAD-2-INPUT-POSITIVE-AND-GATE_45225.html" target="_blank">Buy on Jameco</a></li>
+                                <li>74HC32 OR Logic IC - <a href="https://www.jameco.com/z/SN74HC32N-Texas-Instruments-IC-74HC32-QUAD-2-INPUT-POSITIVE-OR-GATE_45794.html" target="_blank">Buy on Jameco</a></li>
+                                <li>74HC86 XOR Logic IC - <a href="https://www.jameco.com/z/74HC86-Major-Brands-IC-74HC86-QUAD-2-INPUT-EXCLUSIVE-OR-GATE_46181.html" target="_blank">Buy on Jameco</a></li>
+                            </ul>
+                            <p class="fs-5 mb-4">Notice that most of these ICs all have 4 2-input logic gates (besides the NOT gate, it has 6 1-input gates). Another thing to note is that all but two of these gates have the same pinout: the NOT logic gate and the NOR logic gate. The NOR logic gate is the same as the others, but its inputs and outputs are switched around compared to the others. The NOT gate only has 1 input, so its pin arrangement will inherently be different.</p>
+
+                            <h3 id="not-logic-gate" class="fw-bolder mb-4 mt-5">NOT Logic Gate Breadboard Circuit (74HC04)</h3>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/PuDcot6k-ms"></iframe>
+                            <p class="fs-5 mb-4">This is a working NOT gate according to its pinout. When making this circuit at home, don’t forget to place the IC on the breadboard in the correct orientation.</p>
+
+                            <h3 id="nor-logic-gate" class="fw-bolder mb-4 mt-5">NOR Logic Gate Breadboard Circuit (74HC02)</h3>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/"></iframe>
+                            <p class="fs-5 mb-4">This is the only logic gate IC with a different pinout than the NAND, OR, NOR, and AND ICs. Take a look at the <a href="https://www.jameco.com/Jameco/Products/ProdDS/45188.pdf" target="_blank">NOR gate’s datasheet</a> and try this circuit out yourself!</p>
+
+                            <h3 id="nand-logic-gate" class="fw-bolder mb-4 mt-5">NAND Logic Gate Breadboard Circuit (74HC00)</h3>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/"></iframe>
+                            <p class="fs-5 mb-4">The <a href="https://www.jameco.com/Jameco/Products/ProdDS/45161.pdf" target="_blank">NAND gate’s pinout</a> matches the <a href="https://www.jameco.com/Jameco/Products/ProdDS/45225.pdf" target="_blank">AND</a>, <a href="https://www.jameco.com/Jameco/Products/ProdDS/45794.pdf" target="_blank">OR</a>, and <a href="https://www.jameco.com/Jameco/Products/ProdDS/46181.pdf" target="_blank">XOR</a> gates’ pinouts as well.</p>
+
+                            <h2 id="other-uses" class="fw-bolder mb-4 mt-5">Other Uses for Logic Gates</h2>
+                            <p class="fs-5 mb-4">ogic gates can be combined into many other circuits to perform more complex tasks. A common and well-known example of this is a computer’s CPU. We will be diving into some less complex ICs. In this tutorial, we will be focusing on shift registers and decoders.</p>
+
+                            <h3 id="shift-registers" class="fw-bolder mb-4 mt-5">How to Use Shift Registers</h3>
+                            <p class="fs-5 mb-4">To follow along with this section, you will need the two types of shift registers from Jameco:</p>
+                            <ul class="fs-5 mb-4">
+                                <li><a href="https://www.jameco.com/z/74HC165-Major-Brands-IC-74HC165-8-Bit-Parallel-Load-Shift-Register_45495.html" target="_blank">parallel in/serial out (74HC165)</a></li>
+                                <li><a href="https://www.jameco.com/z/74HC164-Major-Brands-IC-74HC164-8-Bit-Serial-Shift-Register_45487.html" target="_blank">serial in/parallel out (74HC164)</a></li>
+                            </ul>
+                            <p class="fs-5 mb-4">The parallel in/serial out registers simply take parallel data in and output serial data. The serial in/parallel out ones do the opposite.</p>
+                            <p class="fs-5 mb-4">Shift registers have a few applications. For example, if you have one device that has a serial data bus but you need to communicate with a device that has a parallel data bus, you could use a shift register to convert the serial data into parallel data. Let's take a look at using the 74HC164 (serial in) shift register first.</p>
+
+                            <h4 class="fw-bold mb-4 mt-5">Making a Serial In Shift Register Circuit on a Breadboard</h4>
+                            <p class="fs-5 mb-4">To understand how to use a shift register on a breadboard, we will be making this circuit with 3 push buttons and 8 LEDs.</p>
+                            <ol class="fs-5 mb-4">
+                                <li>Pin 1 is connected to a push button.</li>
+                                <li>Pin 2 is connected to the same push button as pin 1. This is the data input, and it’s active high.</li>
+                                <li>Pins 3-6 and pins 10-13 are all connected to a positive terminal of an LED, totalling 8 LEDs. Connect each LED to ground using a 220Ω resistor.</li>
+                                <li>Connect pin 7 to ground.</li>
+                                <li>Pin 8 is connected to the <a href="555-timer.html" target="_blank">output of a 555 timer clock</a>, demonstrated in the linked article. This pin is our clock.</li>
+                                <li>Pin 9, the clear input (active low), is connected to the last push button.</li>
+                                <li>Finally, pin 14 is connected to 5V.</li>
+                            </ol>
+                            <p class="fs-5 mb-4">Now we have 3 inputs and 8 outputs. This is the truth table for these inputs from the datasheet:</p>
+                            <img class="img-fluid rounded" src="" alt="shift register truth table" />
+                            <p><i class="mb-4">This image was taken directly from <a href="https://www.jameco.com/Jameco/Products/ProdDS/45487.pdf" target="_blank">this datasheet</a></i></p>
+                            <p class="fs-5 mt-4 mb-4">
+                                The clear input corresponds to the button from step 6, the clock input corresponds to step 5, and the other two inputs, A and B, correspond to steps 1 and 2, 
+                                respectively. When Clear is low, then the shift register clears all its data. When not clearing, but the Clock input is low, the shift register holds the 
+                                current data. When both Clear and Clock are high, this is where we can alter the data. On the first clock pulse, Q<sub>A</sub> will be whatever value is present 
+                                in the button from steps 1 & 2. Then on the next clock pulse, Q<sub>B</sub> will be altered, and so on until Q<sub>H</sub>, and it repeats back to Q<sub>A</sub>. 
+                                How to use the 74HC164 on a breadboard:
+                            </p>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/"></iframe>
+
+                            <h4 class="fw-bold mb-4 mt-5">Making a Parallel In Shift Register Circuit on a Breadboard</h4>
+                            <p class="fs-5 mb-4">This shift register is very similar to the Serial-in shift register. <a href="https://www.jameco.com/Jameco/Products/ProdDS/45495.pdf" target="_blank">Open up the datasheet</a> and let’s take a look at the steps for this shift register:</p>
+                            <ol class="fs-5 mb-4">
+                                <li>Pin 1 is connected to a push button. This will be our input that tells the shift register to load a value and is active low.
+                                <li>Pin 2 is the clock for this shift register. Connect this to the 555 timer circuit mentioned previously.</li>
+                                <li>Rather than connecting all of our parallel data pins to a button and having to deal with 8 buttons at once, we will be connecting these directly to either 5V or GND. Connect these however you like on the breadboard's power rails. These are pins 3-6 and 11-14.</li>
+                                <li>Pin 7 is the inverse of the serial output (pin 9). Keep unconnected.</li>
+                                <li>Connect pin 8 to GND, as it is the ground pin.</li>
+                                <li>Pin 9 is the serial output pin. Connect a positive terminal of an LED to 5V and the negative terminal to ground with a 220Ω resistor.</li>
+                                <li>We won’t worry about pin 10. Keep unconnected.</li>
+                                <li>Pin 15 is the Clock Inhibit. Keep this pin tied to 5V.</li>
+                                <li>Tie pin 16 (V<sub>CC</sub>) to 5V.</li>
+                            </ol>
+                            <p class="fs-5 mb-4">When we put a value in the parallel inputs, we automatically load that directly into the shift register. Then, when we press the button from step 1 and pulse the clock input once, we should be able to see the first bit of our shift register input. Here’s how to use the 74HC165 on a breadboard:</p>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/"></iframe>
+
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">By learning to interpret pinouts, recognize safe operating conditions, and implement logic functions on a breadboard, you’ll be ready to make your unique circuits. Shift registers are very useful in circuits, and they have a wide variety of applications.</p>
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">Why do you use Jameco.com to buy parts for your circuit projects?</div>
+                            <div class="card-body">Jameco is based in the United States, and they have always been reliable and on time. They have pretty much everything I will need for my projects, and with good prices as well.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">What do I do if I can’t figure out how to solve a problem with my circuit?</div>
+                            <div class="card-body">Many times, circuits fail. The important thing is to try and figure out what went wrong. On breadboards, you should try to figure out if any contact points are weak, using a <a target="_blank" href="https://www.jameco.com/z/DT-182-Jameco-BenchPro-Mini-Pocket-Digital-Multimeter-AC-DC-Voltage-DC-Current-Resistance-Diode-Transistor-Continuity-Battery-Test_2238397.html">multimeter from Jameco</a> on the diode setting. If you still can’t figure out what’s wrong, you could try to ask <a target="_blank" href="https://electronics.stackexchange.com">electronics.stackexchange.com</a>. This platform has many experienced people willing to help others become better with circuits.</div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input id="search-text" class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" onclick="search();" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#reading-datasheet">How to Read Datasheets and Pinouts</a></li>
+                                <ul>
+                                    <li><a href="#connection-diagram">Connection Diagram</a></li>
+                                    <li><a href="#function-table">Function Table</a></li>
+                                    <li><a href="#op-conditions">Recommended Operating Conditions</a></li>
+                                </ul>
+                                <li><a href="#different-types">Why are there Different Types of ICs for Logic Gates</a></li>
+                                <li><a href="#ics-breadboard">How to Use Logic Gate ICs On a Breadboard</a></li>
+                                <ul>
+                                    <li><a href="#not-logic-gate">NOT Logic Gate Breadboard Circuit (74HC04)</a></li>
+                                    <li><a href="#nor-logic-gate">NOR Logic Gate Breadboard Circuit (74HC02)</a></li>
+                                    <li><a href="#nand-logic-gate">NAND Logic Gate Breadboard Circuit (74HC00)</a></li>
+                                </ul>
+                                <li><a href="#other-uses">Other Uses for Logic Gates</a></li>
+                                <ul>
+                                    <li><a href="#shift-registers">How to Use Shift Registers</a></li>
+                                </ul>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <li><ul>
+                                    <li><a href="#faq1">Why do you use Jameco.com to buy parts for your circuit projects?</a></li>
+                                    <li><a href="#faq2">What do I do if I can't figure out how to solve a problem with my circuit?</a></li>
+                                </ul></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">Wat You Will Neeed (From Jamceo)</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://www.jameco.com/z/74HC00-Major-Brands-IC-74HC00-QUAD-2-INPUT-NAND-GATE_45161.html">74HC00 Quad 2-Input NAND Gate</a></li>
+                                <li><a href="https://www.jameco.com/z/74HC02-Major-Brands-IC-74HC02-QUAD-2-INPUT-POSITIVE-NOR-GATE_45188.html">74HC02 Quad 2-Input NOR Gate</a></li>
+                                <li><a href="https://www.jameco.com/z/74HC04-Major-Brands-IC-74HC04-Hex-Inverter_45209.html">74HC04 Hex 1-Input NOT Gate</a></li>
+                                <li><a href="https://www.jameco.com/z/74HC165-Major-Brands-IC-74HC165-8-Bit-Parallel-Load-Shift-Register_45495.html">74HC165 Parallel In/Serial Out 8-bit Shift Register</a></li>
+                                <li><a href="https://www.jameco.com/z/74HC164-Major-Brands-IC-74HC164-8-Bit-Serial-Shift-Register_45487.html">74HC164 Serial In/Parallel Out 8-bit Shift Register</a></li>
+                                <li><a href="https://www.jameco.com/z/CF1-4W221JRC-Jameco-ValuePro-Carbon-Film-Resistor-220-Ohm-1-4-Watt-5-_690700.html">220Ω Resistor</a></li>
+                                <li><a href="https://www.jameco.com/z/ZW-MM-20-JVP-Jameco-ValuePro-Zipped-40-Piece-20cm-Male-to-Male-Colored-Jumper-Wires_2260738.html">Jumper Wires</a> or <a href="https://www.jameco.com/z/JMS9313-01G-Jameco-ValuePro-22-AWG-6-Color-Solid-Tinned-Copper-Hook-Up-Wire-25-Foot_2153705.html">Wire</a></li>
+                                <li><a href="https://www.jameco.com/z/LH3330-Jameco-ValuePro-LED-Red-Diffused-5mm-T-1-3-4-697nm-4-5mcd-36VA_94511.html?CID=MERCH">LED</a></li>
+                                <li><a href="https://www.jameco.com/z/BB830-Busboard-Prototype-Systems-830-Point-Solderless-Plug-in-Breadboard-with-4-Power-Rails-21-26AWG-ABS_2283767.html">Breadboard</a></li>
+                                <li><a href="https://www.jameco.com/z/TL1105PF160Q-JVP-Jameco-ValuePro-Switch-Push-Button-Tactile-SPST-OFF-ON-15-VDC-20mA-Actuator-Height-0-13-Inch_149948.html?CID=MERCH">Pushbuttons</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Integrated Circuit</div>
+                        <div class="card-body"> IC stands for integrated circuit. An integrated circuit explained simply, is an electronic device that contains miniaturized components like <a href="transistors-on-breadboards.html" target="_blank">transistors</a>, <a target="_blank" href="electronics-at-home.html#capacitors">capacitors</a>, and <a target="_blank" href="electronics-at-home.html#resistors">resistors</a>.</div>
+                    </div>
+                    <div class="card mb-4" style="top:22%;">
+                        <div class="card-header">The XNOR Gate</div>
+                        <div class="card-body">We will not be looking at the XNOR gate due to it being easily created with an XOR and NOT gate, and it is rarely used.</div>
+                    </div>
+                    <div class="card mb-4" style="top:24%;">
+                        <div class="card-header">Quick Tip</div>
+                        <div class="card-body">Check out our article about <a href="logic-gates.html" target="_blank">logic gates and truth tables</a> if you are confused about how you know what the output of a logic gate will be based on the inputs</div>
+                    </div>
+                    <div class="card mb-4" style="top:43%;">
+                        <div class="card-header">Parallel vs. Serial Data</div>
+                        <div class="card-body">Parallel data, in short, is where all members of the data bus each have a separate input pin. If you had an 8-bit bus, you would need 8 data pins. Serial data, on the other hand, only has one data pin for the entire bus. It sends one bit of data every time the clock goes high. Serial is best for applications with limited data pins, and parallel is better for high speed.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="/privacy-policy.html" class="text-white text-decoration-underline">Privacy Policy</a></p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>
