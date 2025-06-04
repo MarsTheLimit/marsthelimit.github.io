@@ -59,14 +59,14 @@
 
     <url>
         <loc>https://marsthelimit.github.io/boolean-for-programmers.html</loc>
-        <lastmod>2025-05-30</lastmod>
+        <lastmod>2025-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://marsthelimit.github.io/transistors-on-breadboards</loc>
-        <lastmod>2025-06-02</lastmod>
+        <lastmod>2025-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -74,6 +74,13 @@
     <url>
         <loc>https://marsthelimit.github.io/binary-math</loc>
         <lastmod>2025-06-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://marsthelimit.github.io/real-life-logic-circuits</loc>
+        <lastmod>2025-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
