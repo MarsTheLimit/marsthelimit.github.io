@@ -208,7 +208,7 @@
                             <p class="fs-5 mb-4">To understand how to use a shift register on a breadboard, we will be making this circuit with 3 push buttons and 8 LEDs.</p>
                             <ol class="fs-5 mb-4">
                                 <li>Pin 1 is connected to a push button.</li>
-                                <li>Pin 2 is connected to the same push button as pin 1. This is the data input, and it's active high.</li>
+                                <li>Pin 2 is connected to the same push button as pin 1. These are the data inputs, and they're active high.</li>
                                 <li>Pins 3-6 and pins 10-13 are all connected to a positive terminal of an LED, totalling 8 LEDs. Connect each LED to ground using a 220Ω resistor.</li>
                                 <li>Connect pin 7 to ground.</li>
                                 <li>Pin 8 is connected to the <a href="555-timer.html" target="_blank">output of a 555 timer clock</a>, demonstrated in the linked article. This pin is our clock.</li>
@@ -225,7 +225,7 @@
                                 in the button from steps 1 & 2. Then on the next clock pulse, Q<sub>B</sub> will be altered, and so on until Q<sub>H</sub>, and it repeats back to Q<sub>A</sub>. 
                                 How to use the 74HC164 on a breadboard:
                             </p>
-                            <iframe width="420" height="345" src="https://www.youtube.com/embed/"></iframe>
+                            <iframe width="420" height="345" src="https://www.youtube.com/embed/dQxX6jWeDyQ"></iframe>
 
                             <h4 class="fw-bold mb-4 mt-5">Making a Parallel In Shift Register Circuit on a Breadboard</h4>
                             <p class="fs-5 mb-4">This shift register is very similar to the Serial-in shift register. <a href="https://www.jameco.com/Jameco/Products/ProdDS/45495.pdf" target="_blank">Open up the datasheet</a> and let's take a look at the steps for this shift register:</p>
@@ -242,6 +242,8 @@
                             </ol>
                             <p class="fs-5 mb-4">When we put a value in the parallel inputs, we automatically load that directly into the shift register. Then, when we press the button from step 1 and pulse the clock input once, we should be able to see the first bit of our shift register input. Here's how to use the 74HC165 on a breadboard:</p>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/P_FWcJLq4SE"></iframe>
+                            <h4 class="fw-bold mb-4 mt-5">Schematic</h4>
+                            <figure id="parallel-in" class="mb-4"><img class="img-fluid rounded" src="src/parallel-in-shift-register-schematic.png" alt="XOR and XNOR logic gate truth table and visual" /></figure>
 
                             <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
                             <p class="fs-5 mb-4">By learning to interpret pinouts, recognize safe operating conditions, and implement logic functions on a breadboard, you'll be ready to make your unique circuits. Shift registers are very useful in circuits, and they have a wide variety of applications.</p>
