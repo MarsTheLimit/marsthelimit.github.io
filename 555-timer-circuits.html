@@ -88,11 +88,11 @@
                         <section class="mb-5">
                             <p class="fs-5 mb-4">The 555 timer is an essential part when designing your timing circuits. The 555 timer is a beginner-friendly component used in both simple and 
                                 complex circuits. Its low cost and reliability make it a favorite for beginners and pros alike. Whether you're building an LED flasher, sound generator, or timing
-                                delay, the 555 timer can handle it with just a few components. In this guide for beginners, we will walk through how to use the 555 timer. If you aren’t familiar
+                                delay, the 555 timer can handle it with just a few components. In this guide for beginners, we will walk through how to use the 555 timer. If you aren't familiar
                                 <a target="_blank" href="electronics-at-home.html#resistors">with resistors</a> or <a target="_blank" href="electronics-at-home.html#capacitors">capacitors</a>, I would recommend checking out our article about <a target="_blank" href="electronics-at-home.html">the basics of making electronic circuits on your own</a>.
                             </p>
                             <h2 id="pinout" class="fw-bolder mb-4 mt-5">555 Timer Pinout Explained (With Datasheet Details)</h2>
-                            <p class="fs-5 mb-4">Using the <a target="_blank" href="https://www.jameco.com/Jameco/Products/ProdDS/27422.pdf">555 timer’s datasheet</a>, let’s explore the functions of all the pins on the IC. This is what the pinout looks like, taken directly from its datasheet:</p>
+                            <p class="fs-5 mb-4">Using the <a target="_blank" href="https://www.jameco.com/Jameco/Products/ProdDS/27422.pdf">555 timer's datasheet</a>, let's explore the functions of all the pins on the IC. This is what the pinout looks like, taken directly from its datasheet:</p>
                             <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-pinout.png" alt="555 timer pinout" /></figure>
                             <p class="fs-5 mb-4">Starting with pin 1:</p>
                             <ul class="fs-5 mb-4">
@@ -100,11 +100,11 @@
                                 <li>Pin 2 is the trigger. Whenever the trigger goes below a third of the voltage present at VCC, the timer is triggered. This simply means the output (pin 3) is inverted.</li>
                                 <ul><li>This pin is often connected to a push button in bistable and monostable modes, which are explained later.</li></ul>
                                 <li>Pin 3 is the output pin. We will be hooking the LED to this pin.</li>
-                                <li>Pin 4 is the reset. When this pin is pulled low, the timer’s output is forced to go low as well.</li>
+                                <li>Pin 4 is the reset. When this pin is pulled low, the timer's output is forced to go low as well.</li>
                                 <ul><li>Used in circuits where you want to stop the clock and debug</li>
                                 <li>Can be used in all modes</li></ul>
-                                <li>Pin 5 is the control voltage pin. We won’t be looking at this pin. What you need to know, though, is that we will be connecting a .01 µF capacitor to avoid unwanted noise that can cause our circuit to not work.</li>
-                                <li>Pin 6 is the threshold pin. When the voltage present on this pin is 2/3 of the Vcc’s voltage, then it turns the output low.</li>
+                                <li>Pin 5 is the control voltage pin. We won't be looking at this pin. What you need to know, though, is that we will be connecting a .01 µF capacitor to avoid unwanted noise that can cause our circuit to not work.</li>
+                                <li>Pin 6 is the threshold pin. When the voltage present on this pin is 2/3 of the Vcc's voltage, then it turns the output low.</li>
                                 <ul><li>Used in all modes</li></ul>
                                 <li>Pin 7 is the discharge. This is often connected through a polar capacitor to ground. The capacitor charges and discharges, which when in astable or monostable modes, causes the output to toggle from high to low like a clock. </li>
                                 <li>Pin 8 is the V<sub>CC</sub>, or input voltage.</li>
@@ -112,7 +112,7 @@
                             <p class="fs-5 mb-4">The uses of a 555 timer in electronics all branch off of these pins. Understanding them is crucial in understanding what a 555 timer does and how a 555 timer works.</p>
                             
                             <h3 id="555-voltage">555 Timer Voltage Requirements and Current Limits</h3>
-                            <p class="fs-5 mb-4">According to the 555 timer’s datasheet, the minimum input voltage is 4.5 and the maximum is 16. The 555 timer offers its use in a very broad range of circuits. The 555 timer, however, cannot handle a lot of current.</p>
+                            <p class="fs-5 mb-4">According to the 555 timer's datasheet, the minimum input voltage is 4.5 and the maximum is 16. The 555 timer offers its use in a very broad range of circuits. The 555 timer, however, cannot handle a lot of current.</p>
                             <ul class="fs-5 mb-4">
                                 <li>For 5V, the max is 6 mA</li>
                                 <li>For 15V, the max is 15 mA</li>
@@ -162,7 +162,7 @@
                             <span class="span-pre">T<sub>sec</sub>1.1R1C1</span>
                             <p class="fs-5 mb-4">If I had a 10KΩ resistor and a 47 μF capacitor</p>
                             <span class="span-pre">	T = 1.1(10000)(.000047) = .517 sec</span>
-                            <p class="fs-5 mb-4">This mode is especially helpful when debouncing a switch. When you press a switch, the contact points may bounce slightly, which may cause the circuit to trigger extra button presses. But with the 555 timer in monostable mode, you can use the smooth output rather than the choppy button’s output.</p>
+                            <p class="fs-5 mb-4">This mode is especially helpful when debouncing a switch. When you press a switch, the contact points may bounce slightly, which may cause the circuit to trigger extra button presses. But with the 555 timer in monostable mode, you can use the smooth output rather than the choppy button's output.</p>
                             <h4>Breadboard Example</h4>
                             <iframe width="420" height="345" src="https://youtube.com/embed/TzBazMcwI0I"></iframe>
 
@@ -170,9 +170,9 @@
                             <p class="fs-5 mb-4">
                                 The 555 timer is one of the most flexible and well-rounded components in electronics. Whether you need a simple pulse or a latch to store data, the 555 timer is 
                                 a simple and reliable method. Because of its ability to operate with minimal outside components, many electronics hobbyists use it in their projects. By 
-                                understanding how the 555 timer works, you’ll be well on your way to designing your circuits that use these devices. If you're looking for an easy way to get 
+                                understanding how the 555 timer works, you'll be well on your way to designing your circuits that use these devices. If you're looking for an easy way to get 
                                 started with timing circuits or want to add reliable timing control to your very own designs, the 555 timer is a tried-and-true choice that belongs in every 
-                                maker’s toolbox.
+                                maker's toolbox.
                             </p>
                             <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
 
