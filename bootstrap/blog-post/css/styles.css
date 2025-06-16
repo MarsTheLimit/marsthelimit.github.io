@@ -10,6 +10,25 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid black;
+}
+.frac span.symbol {
+    display: none;
+} 
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -260,12 +279,13 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 pre,
 code,
 kbd,
-samp {
+samp,
+.span-pre {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
 }
 
-pre {
+pre, .span-pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
