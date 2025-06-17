@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Learn what Ohm's Law is, how resistance works, how to use resistors safely, and how to read resistor color bands. A complete beginner's guide to electronics." />
+        <meta name="author" content="Boden Bensema" />
+        <title>A Guide to Ohm's Law, Resistance, and Resistors for Beginners</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="canonical" href="https://marsthelimit.gitub.io/ohms-law.html" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+
+        <!-- FAQ -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "How can I tell which band is the first and which is the last?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There will usually be a gap between the 4th and the 5th bands."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "What is Ohm's Law explained simply?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ohm's Law demonstrates the relationship between voltage (V), current (I), and resistance (R). The equations are V = IR, I = V/R, and R = V/I."
+            }
+            }
+        ]
+        }
+        </script>
+
+        <!-- Article -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+            "@type": "Person",
+            "name": "Boden Bensema"
+        },
+        "datePublished": "2025-05-28",
+        "description": "Learn what Ohm's Law is, how resistance works, how to use resistors safely, and how to read resistor color bands. A complete beginner's guide to electronics.",
+        "mainEntityOfPage": "https://marsthelimit.gitub.io/ohms-law.html"
+        }
+        </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MarsTheLimit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="articles.html">Articles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">A Guide to Ohm's Law, Resistance, and Resistors for Beginners</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on Jue 17, 2025 by Boden Bensema</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Concept</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Math</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Circuits</a>
+                        </header>
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">Understanding Ohm's Law, resistance, and how resistors function is essential for anyone learning electronics. Whether you're a hobbyist, student, or budding electrical engineer, this foundational knowledge will help you design safe and effective circuits, troubleshoot electrical problems, and avoid damaging components. In this article, we'll explore what resistance is, how to use Ohm's Law in practical circuits, how resistor power ratings work, and how to read resistor values using color bands. This is a great starting point for building your understanding of electricity.</p>
+                            <h2 id="resistance" class="fw-bolder mb-4 mt-5">What is resistance?</h2>
+                            <p class="fs-5 mb-4">Resistance, measured in ohms (Ω), is a property of materials that resists the flow of current. Think of it like friction in a pipe: the more resistance, the harder it is for electricity to flow. <a target="_blank" href="electronics-at-home.html#resistors">Resistors<a> are components specifically made to introduce resistance into a circuit.</a>
+                            <p class="fs-5 mb-4">Wires made from conductive materials like copper have very low resistance, similar to ice, providing little friction to skates. In contrast, resistors are like rough pavement, slowing the electrical flow intentionally. Every material, from metals to insulators, has some level of resistance, ranging from a fraction of an ohm to millions of ohms.</p>
+                            <h2 id="ohms-law" class="fw-bolder mb-4 mt-5">What is Ohm's Law?</h2>
+                            <p class="fs-5 mb-4">Ohm's Law is a fundamental equation in electronics. It demonstrates the relationship between voltage (V), current (I), and resistance (R).</p>
+                            <pre class="fw-bold mb-4">V = I &bull; R</pre>
+                            <p class="fs-5 mb-4">From this equation, we also find
+                            <pre class="fw-bold mb-4">I = V/R
+R = V/I</pre>
+                            <h3 id="law-example">Ohm's Law example</h3>
+                            <p class="fs-5 mb-4">If I have a 5V power supply and a 100Ω resistor, the current can be calculated:</p>
+                            <pre class="fw-bold mb-4">I = V/R = 5/100 = .05 A or 50 mA</pre>
+                            <p class="fs-5 mb-4">With Ohm's Law, you can calculate how much current a resistor will draw or what kind of resistor you need for a given voltage and current. This helps prevent ruining components or power supplies.</p>
+                            <h3 id="application">Real life application: avoiding overload with Ohm's Law</h3>
+                            <p class="fs-5 mb-4">If I have a circuit with a resistance of 27Ω and a power supply that provides 6V and a maximum of 200mA, I would need to know if the power supply will be able to supply enough amperage for my circuit. Doing the math,</p>
+                            <pre class="fw-bold mb-4">I = 6/27 = .2222 A = .222 A or 222 mA</pre>
+                            <p class="fs-5 mb-4">This circuit would require more current than I can get with this power supply. This circuit can cause the power supply to overheat and potentially fail. Knowing this ahead of time can save your power supplies.</p>
+                            <h3 id="short-circuit">What happens in a short circuit?</h3>
+                            <p class="fs-5 mb-4">A short circuit happens when electricity flows through a path with very little resistance, like touching a copper wire to both terminals on a 9-volt battery. Let's say that our piece of copper wire has a resistance of .0001Ω. Using a 9V battery,</p>
+                            <pre class="fw-bold mb-4">I = 9/.0001 = 90000</pre>
+                            <p class="fs-5 mb-4">This is an enormous amount of current. In reality, the battery cannot supply us with this much (thankfully!), but it will overheat, and even potentially explode. This is why it is necessary to always have a load (like an <a href="electronics-at-home.html#leds" target="_blank">LED</a>) or a resistor in your circuit.</p>
+                            <h2 id="power-value" class="fw-bolder mb-4 mt-5">Resistor power ratings and values</h2>
+                            <p class="fs-5 mb-4">Resistors can overheat and start on fire if they have too much power running through them. This is why it is important to know what power your resistor is rated for. The equation for power (measured in watts (W)) is</p>
+                            <pre class="fw-bold mb-4">W = V &bull; A</pre>
+                            <p class="fs-5 mb-4">Let's say that we have a 220Ω resistor that's rated for 1/4 watt, and we are trying to use a 5V power supply with a maximum of 2 amps. We can calculate the current used using Ohm's Law:</p>
+                            <pre class="fw-bold mb-4">I = 5/220 = 22.7mA</pre>
+                            <p class="fs-5 mb-4">Now, taking the amperage and voltage:</p>
+                            <pre class="fw-bold mb-4">W = 5 &bull; .0227 = .1135 W</pre>
+                            <p class="fs-5 mb-4">.1135 W is less than 1/4 W, meaning this resistor would be safe to use in this circuit.</p>
+                            <h3 id="power">Unknown resistor power rating</h3>
+                            <p class="fs-5 mb-4">Resistors have different sizes, depending on their power rating. Here's a chart that demonstrates these differences:</p>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Physical Size (typical body length)</th>
+                                    <th>Power Rating</th>
+                                </tr>
+                                <tr>
+                                    <td>~1/4 inch (6.3 mm)</td>
+                                    <td>1/8 or 1/4 watt</td>
+                                </tr>
+                                <tr>
+                                    <td>~1/2 inch (9 mm)</td>
+                                    <td>1/2 watt</td>
+                                </tr>
+                                <tr>
+                                    <td>~3/4 inch (11 mm)</td>
+                                    <td>1 watt</td>
+                                </tr>
+                                <tr>
+                                    <td>~1 inch (16 mm)</td>
+                                    <td>2 watts</td>
+                                </tr>
+                                <tr>
+                                    <td>Larger</td>
+                                    <td>5+ watts</td>
+                                </tr>
+                            </table>
+                            <h3 id="values">Reading resistor values</h3>
+                            <p class="fs-5 mb-4">You may have noticed that resistors have little colored bands on them. The colors on the bands hold different values based on where they are located:</p>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Color</th>
+                                    <th>First 2 or 3 bands</th>
+                                    <th>Multiplier</th>
+                                    <th>Tolerance</th>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: black;"></div> Black</td>
+                                   <td>0</td>
+                                   <td>&bull; 1</td>
+                                   <td></td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: brown;"></div> Brown</td>
+                                   <td>1</td>
+                                   <td>&bull; 10</td>
+                                   <td>±1%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: red;"></div> Red</td>
+                                   <td>2</td>
+                                   <td>&bull; 100</td>
+                                   <td>±2%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: orange;"></div> Orange</td>
+                                   <td>3</td>
+                                   <td>&bull; 1K</td>
+                                   <td>±.05%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: yellow;"></div> Yellow</td>
+                                   <td>4</td>
+                                   <td>&bull; 10K</td>
+                                   <td>±.02%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: green;"></div> Green</td>
+                                   <td>5</td>
+                                   <td>&bull; 100K</td>
+                                   <td>±.5%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: blue;"></div> Blue</td>
+                                   <td>6</td>
+                                   <td>&bull; 1M</td>
+                                   <td>±.25%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: purple;"></div> Purple</td>
+                                   <td>7</td>
+                                   <td>&bull; 10M</td>
+                                   <td>±.1%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: gray;"></div> Gray</td>
+                                   <td>8</td>
+                                   <td>&bull; 100M</td>
+                                   <td>±.01%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="border: 1px solid black; display: inline-block; width: 12px; height: 12px; background: white;"></div> White</td>
+                                   <td>9</td>
+                                   <td>&bull; 1G</td>
+                                   <td></td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: silver;"></div> Silver</td>
+                                   <td></td>
+                                   <td>&bull; .1</td>
+                                   <td>±5%</td>
+                                </tr>
+                                <tr>
+                                   <td><div style="display: inline-block; width: 12px; height: 12px; background: gold;"></div> Gold</td>
+                                   <td></td>
+                                   <td>&bull; .01</td>
+                                   <td>±10%</td>
+                                </tr>
+                            </table>
+                            <h4>4 Band Resistor</h4>
+                            <p class="fs-5 mb-4">Each band on this resistor has a different meaning:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>1st band: 1st digit</li>
+                                <li>2nd band: 2nd digit</li>
+                                <li>3rd band: multiplier</li>
+                                <li>4th band: tolerance</li>
+                            </ul>
+                            <p class="fs-5 mb-4">Let's say that we don't know the resistance of this resistor:</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" style="height: 300px;" src="src/4-band-resistor.png" alt="4 band resistor example" /></figure>
+                            <p class="fs-5 mb-4">By taking a look, we see that the first two bands are red, the third is brown, and the last is black. Looking at the table above for the value of each color, we can walk through the steps of calculating the resistance.</p>
+                            <ul class="fs-5 mb-4">
+                                <li>1st and 2nd bands: red and red; 22</li>
+                                <li>Times this value by the third band: brown; 10. We are at 220 now. This is the ohmic value.</li>
+                                <li>The last band, black, means that the resistor can be within ±5% (within 209 and 231 ohms)</li>
+
+                            </ul>
+                            <p class="fs-5 mb-4">You can double-check with this <a href="https://www.calculator.net/resistor-calculator.html?bandnum=4&band1=red&band2=red&band3=blue&multiplier=brown&tolerance=gold&temperatureCoefficient=brown&type=c&x=Calculate" target="_blank">resistor calculator</a>.</p>
+                            <h4>5 Band Resistor</h4>
+                            <p class="fs-5 mb-4">The resistor we are trying to figure out looks like this:</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" style="height: 300px;" src="src/5-band-resistor.png" alt="5 band resistor example" /></figure>
+                            <p class="fs-5 mb-4">Similarly to the 4-band resistor, the first three bands are the digits. The fourth is the multiplier, and the 5th is the tolerance. Calculating the value for this resistor:</p>
+                            <ul class="fs-5 mb-4">
+                                <li>First three bands: red, red, black; 220</li>
+                                <li>Multiplier: black; 1</li>
+                                <li>Tolerance: brown, ±1% (between 217.8 and 222.2 ohms)</li>
+                            </ul>
+                            <p class="fs-5 mb-4">We get a final value of 220Ω.</p>
+                            <h2 id="conclusion" class="fw-bolder mb-4 mt-5">Conclusion</h2>
+                            <p class="fs-5 mb-4">Understanding Ohm's Law, resistance, and resistor ratings is essential for designing safe and effective circuits. Burning out resistors or power supplies can be very dangerous, which is why it is crucial to understand Ohm's Law and how to use it. If you're a beginner in electronics, check out the article on <a target="_blank" href="electronics-at-home.html">how to get started with breadboard circuits</a>. Whether you're building breadboard prototypes or more advanced electronics, mastering Ohm's Law will save time, money, and possibly even your equipment.</p>
+                            <h2 id="faq" class="fw-bolder mb-4 mt-5">People also ask</h2>
+                            <div class="card mb-4">
+                            <div id="faq1" class="card-header">How can I tell which band is the first and which is the last?</div>
+                            <div class="card-body">There will usually be a gap between the 4th and the 5th bands.</div>
+                            </div>
+                            <div class="card mb-4">
+                                <div id="faq2" class="card-header">What is Ohm's Law explained simply?</div>
+                            <div class="card-body">Ohm's Law demonstrates the relationship between voltage (V), current (I), and resistance (R). The equations are V = IR, I = V/R, and R = V/I.</div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input id="search-text" class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" onclick="search();" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget -->
+                    <div class="card mb-4">
+                        <div class="card-header">Table Of Contents</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#resistance">What is resistance?</a></li>
+                                <li><a href="#ohms-law">What is Ohm's Law?</a></li>
+                                <ul>
+                                    <li><a href="#example">Ohm's Law example</a></li>
+                                    <li><a href="#application">Real life application: avoiding overload with Ohm's Law</a></li>
+                                    <li><a href="#short-circuit">What happens in a short circuit?</a></li>
+                                </ul>
+                                <li><a href="#power-value">Resistor power ratings and values</a></li>
+                                <ul>
+                                    <li><a href="#power">Unknown resistor power ratings</a></li>
+                                    <li><a href="#values">Reading resistor values</a></li>
+                                </ul>
+                                <li><a href="#conclusion">Conclusion</a></li>
+                                <li><a href="#faq">People Also Ask</a></li>
+                                <li><ul>
+                                    <li><a href="#faq1">How can I tell which band is the first and which is the last?</a></li>
+                                    <li><a href="#faq2">What is Ohm's Law explained simply?</a></li>
+                                </ul></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="/privacy-policy.html" class="text-white text-decoration-underline">Privacy Policy</a></p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstrap/blog-post/js/scripts.js"></script>
+    </body>
+</html>
