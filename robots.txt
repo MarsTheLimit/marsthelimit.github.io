@@ -4,3 +4,6 @@ Sitemap: https://marsthelimit.github.io/sitemap.xml
 
 User-agent: *
 Disallow: https://marsthelimit.github.io/formula-article.html
+
+User-agent: *
+Disallow: https://marsthelimit.github.io/nmlr-web/
