@@ -113,7 +113,33 @@
                                 Both conditions, liking ice cream and liking cake, must be true for the conclusion to be true. If you like only one of the two, the statement
                                 becomes false. In Boolean logic, this would look like:
                             </p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/and-truth-table.png" alt="truth table for the AND Boolean operator" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Input A</th>
+                                    <th>Input B</th>
+                                    <th>A AND B</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
                             <p class="fs-5 mb-4">This table is called a truth table. The truth table for the AND operator shows that only when both A and B are 1 (true) does the output become 1.</p>
                             <h3 id="or-operator" class="fw-semibold mb-4 mt-5">OR Operator</h3>
                             <p class="fs-5 mb-4">
@@ -124,7 +150,33 @@
                             <p class="fs-5 mb-4">
                                 Even if you like just one of them, you'll still be happy. The only way you wouldn't be happy is if you didn't like either. Truth table for OR:
                             </p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/or-truth-table.png" alt="truth table for the OR Boolean operator" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Input A</th>
+                                    <th>Input B</th>
+                                    <th>A OR B</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
                             <h3 id="not-operator" class="fw-semibold mb-4 mt-5">NOT Operator</h3>
                             <p class="fs-5 mb-4">
                                 The NOT operation is a bit different—it's a unary operator, meaning it works with only one input. NOT is the smallest of the Boolean logic operators. The NOT 
@@ -136,7 +188,20 @@
                                 Here, liking broccoli is the input. The NOT operator flips that value. If you do like it (true), the NOT turns it into false (you won't avoid it). If you don't
                                 like it (false), the NOT turns it into true (you'll avoid it). The truth table for NOT is much simpler compared to AND and OR, because it has only one input:
                             </p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/not-truth-table.png" alt="truth table for the NOT Boolean operator" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Input A</th>
+                                    <th>NOT A</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
                             <h2 id="if-then" class="fw-bolder mb-4 mt-5">If-Then Logic Format</h2>
                             <p class="fs-5 mb-4">
                                 Most Boolean operations can be described using an "if-then" format. These statements form the basic logic we use in everyday decisions and programming. For 
@@ -172,7 +237,23 @@ x = !x</pre>
                                 In Boolean logic, a common symbol is a line over an operator, which looks like this: W̅. This means to perform the "not" operation on the value W. So if W equals 
                                 1, W̅ equals 0. This is one of the most common Boolean logic symbols in many circuit applications. Additionally, you may see a truth table that looks like this:
                             </p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/dont-care-state-example.png" alt="Example for the don't care state" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Input A</th>
+                                    <th>Input B</th>
+                                    <th>Output</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                </tr>
+                            </table>
                             <p class="fs-5 mb-4">All the "X" means is that when the first column is at a "0" state, then the other columns are disabled, or in the don't care state, and do not
                                 matter. An example would be that the first column is the power connecting to the circuit, and when the circuit is powered off, then the other outputs will not do
                                 anything. Thus, they are in the "don't care" state.
