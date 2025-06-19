@@ -1,0 +1,103 @@
+* {
+    font-size: .8rem;
+    padding: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.page {
+    width: 117.5%;
+    padding: 10px;
+    transform: scale(0.85);
+    transform-origin: top left;
+    
+}
+
+.periodic-table, tr, td {
+    border: 0px solid black;
+}
+
+.periodic-table {
+    width: 100%;
+}
+
+#lower-table {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.element-name, .element-en, .element-mass {
+    font-size: 1rem;
+}
+
+.element-mass, .element-en {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.element-number {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.element-symbol {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.radioactive {
+    background-image: url('../src/radioactive.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top 5px center;
+    background-size: 25px 25px;
+}
+
+.synthetic {
+    color: rgb(1, 255, 1);
+    text-shadow: -1px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 0px 0 #000;
+}
+
+.metalloid {
+    background-color: #00a6f380;
+}
+
+.halogen {
+    background-color: #ec1c2480;
+}
+
+.nonmetal {
+    background-color: #ffca1880;
+}
+
+.alkali-metal {
+    background-color: #0ed14580;
+}
+
+.alkaline-earth-metal {
+    background-color: #11853280;
+}
+
+.noble-gas {
+    background-color: #00d7f380;
+}
+
+.transition-metal {
+    background-color: #ff934b80;
+}
+
+.post-transition-metal {
+    background-color: #ff660180;
+}
+
+.lanthanide {
+    background-color: #fb05ff80;
+}
+
+.actinide {
+    background-color: rgba(163, 21, 165, 0.459);
+}
