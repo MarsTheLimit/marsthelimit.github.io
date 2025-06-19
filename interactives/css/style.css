@@ -5,9 +5,8 @@
 }
 
 .page {
-    width: 117.5%;
+    width: 100%;
     padding: 10px;
-    transform: scale(0.85);
     transform-origin: top left;
     
 }
@@ -30,7 +29,7 @@
     font-size: 1rem;
 }
 
-.element-mass, .element-en {
+.element-mass {
     text-align: right;
     padding: 0;
     margin: 0;

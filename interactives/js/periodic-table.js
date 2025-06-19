@@ -29,7 +29,7 @@ function createElementBox(atomicMass, atomicNumber, symbol, name, eConfig, row, 
     sym.textContent = symbol;
 
     const nm = document.createElement("div");
-    nm.className = "element-name col";
+    nm.className = "element-name";
     nm.textContent = name;
 
     const electrons = document.createElement("div");
@@ -37,18 +37,18 @@ function createElementBox(atomicMass, atomicNumber, symbol, name, eConfig, row, 
     electrons.textContent = eConfig;
 
     const en = document.createElement("div");
-    en.className = "element-en col";
+    en.className = "element-en";
     en.textContent = electroNegativity;
 
-    sideBySide2.appendChild(nm);
-    sideBySide2.appendChild(en);
+    // sideBySide2.appendChild(nm);
+    // sideBySide2.appendChild(en);
 
     box.appendChild(sideBySide);
     box.appendChild(sym);
-    box.append(sideBySide2);
-    // box.appendChild(nm);
+    // box.append(sideBySide2);
+    box.appendChild(nm);
+    box.appendChild(en);
     box.appendChild(electrons);
-    // box.appendChild(en);
     row.appendChild(box);
 }
 
