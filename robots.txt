@@ -6,3 +6,4 @@ User-agent: *
 Disallow: https://marsthelimit.github.io/formula-article.html
 Disallow: https://marsthelimit.github.io/nmlr-web/
 Disallow: https://marsthelimit.github.io/interactives/
+Disallow: https://marsthelimit.github.io/adsweb/
