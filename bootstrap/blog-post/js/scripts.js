@@ -12,7 +12,9 @@ origcards = document.getElementsByClassName("col-lg-4")[0].getElementsByClassNam
 function revert() {
     document.getElementsByClassName("row")[0].innerHTML = originalRow;
     document.getElementsByClassName("col-lg-4")[0].getElementsByClassName("card").innerHTML = origcards;
-    document.getElementsByClassName("side-card-mobile").style.display = "none";
+    document.querySelectorAll(".side-card-mobile").forEach(element => {
+      element.style.display = "none";
+    });
 }
 
 function search() {
@@ -34,6 +36,10 @@ function toc() {
 
 if (window.innerWidth <= 991) {
     toc();
+} else {
+  document.querySelectorAll(".side-card-mobile").forEach(element => {
+      element.style.display = "none";
+    });
 }
 
 window.addEventListener("resize", () => {

@@ -101,6 +101,12 @@
                                 <li>Function Table - tells us how to use the IC's pins according to their labels</li>
                                 <li>Recommended Operating Conditions - tells us what voltages to use so we don't ruin the IC</li>
                             </ul>
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Integrated Circuit</div>
+                                    <div class="card-body"> IC stands for integrated circuit. An integrated circuit explained simply, is an electronic device that contains miniaturized components like <a target="_blank" href="transistors-on-breadboards.html" target="_blank">transistors</a>, <a target="_blank" href="electronics-at-home.html#capacitors">capacitors</a>, and <a target="_blank" href="electronics-at-home.html#resistors">resistors</a>.</div>
+                                </div>
+                            </div>
                             <h3 id="connection-diagram" class="fw-bolder mb-4 mt-5">Connection Diagram</h3>
                             <p class="fs-5 mb-4">Looking at the 74LS08's datasheet, we see that there are 4 AND gates drawn into the Connection Diagram. They each have two inputs and one output:</p>
                             <ul class="fs-5 mb-4">
@@ -122,6 +128,7 @@
                                 <ul>
                                     <li>Y - for pins labeled Y1 through Y4</li>
                                 </ul>
+                            </ul>
                             <p class="fs-5 mb-4">Each column corresponds to a pin on the connection diagram.</p>
 
                             <h3 id="op-conditions" class="fw-bolder mb-4 mt-5">Recommended Operating Conditions</h3>
@@ -179,6 +186,12 @@
                                 <li>74HC86 XOR Logic IC - <a href="https://www.jameco.com/z/74HC86-Major-Brands-IC-74HC86-QUAD-2-INPUT-EXCLUSIVE-OR-GATE_46181.html" target="_blank">Buy on Jameco</a></li>
                             </ul>
                             <p class="fs-5 mb-4">Notice that most of these ICs all have 4 2-input logic gates (besides the NOT gate, it has 6 1-input gates). Another thing to note is that all but two of these gates have the same pinout: the NOT logic gate and the NOR logic gate. The NOR logic gate is the same as the others, but its inputs and outputs are switched around compared to the others. The NOT gate only has 1 input, so its pin arrangement will inherently be different.</p>
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">The XNOR Gate</div>
+                                    <div class="card-body">We will not be looking at the XNOR gate due to it being easily created with an XOR and NOT gate, and it is rarely used.</div>
+                                </div>
+                            </div>
 
                             <h3 id="not-logic-gate" class="fw-bolder mb-4 mt-5">NOT Logic Gate Breadboard Circuit (74HC04)</h3>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/PuDcot6k-ms"></iframe>
@@ -187,6 +200,12 @@
                             <h3 id="nor-logic-gate" class="fw-bolder mb-4 mt-5">NOR Logic Gate Breadboard Circuit (74HC02)</h3>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/Pd1l3RpIjh8"></iframe>
                             <p class="fs-5 mb-4">The circuit shown in the video has two pushbuttons that start high, and when pressed go low. This is the only logic gate IC with a different pinout than the NAND, OR, NOR, and AND ICs. Take a look at the <a href="https://www.jameco.com/Jameco/Products/ProdDS/45188.pdf" target="_blank">NOR gate's datasheet</a> and try this circuit out yourself!</p>
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Quick Tip</div>
+                                    <div class="card-body">Check out our article about <a target="_blank" href="logic-gates.html" target="_blank">logic gates and truth tables</a> if you are confused about how you know what the output of a logic gate will be based on the inputs</div>
+                                </div>
+                            </div>
 
                             <h3 id="nand-logic-gate" class="fw-bolder mb-4 mt-5">NAND Logic Gate Breadboard Circuit (74HC00)</h3>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/HNmF92yPPAY"></iframe>
@@ -203,7 +222,12 @@
                             </ul>
                             <p class="fs-5 mb-4">The parallel in/serial out registers simply take parallel data in and output serial data. The serial in/parallel out ones do the opposite.</p>
                             <p class="fs-5 mb-4">Shift registers have a few applications. For example, if you have one device that has a serial data bus but you need to communicate with a device that has a parallel data bus, you could use a shift register to convert the serial data into parallel data. Let's take a look at using the 74HC164 (serial in) shift register first.</p>
-
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Parallel vs. Serial Data</div>
+                                    <div class="card-body">Parallel data, in short, is where all members of the data bus each have a separate input pin. If you had an 8-bit bus, you would need 8 data pins. Serial data, on the other hand, only has one data pin for the entire bus. It sends one bit of data every time the clock goes high. Serial is best for applications with limited data pins, and parallel is better for high speed.</div>
+                                </div>
+                            </div>
                             <h4 class="fw-bold mb-4 mt-5">Making a Serial In Shift Register Circuit on a Breadboard</h4>
                             <p class="fs-5 mb-4">To understand how to use a shift register on a breadboard, we will be making this circuit with 3 push buttons and 8 LEDs.</p>
                             <ol class="fs-5 mb-4">
@@ -326,11 +350,11 @@
                         <div class="card-header">Integrated Circuit</div>
                         <div class="card-body"> IC stands for integrated circuit. An integrated circuit explained simply, is an electronic device that contains miniaturized components like <a target="_blank" href="transistors-on-breadboards.html" target="_blank">transistors</a>, <a target="_blank" href="electronics-at-home.html#capacitors">capacitors</a>, and <a target="_blank" href="electronics-at-home.html#resistors">resistors</a>.</div>
                     </div>
-                    <div class="card mb-4" style="top:22%;">
+                    <div class="card mb-4" style="top:15%;">
                         <div class="card-header">The XNOR Gate</div>
                         <div class="card-body">We will not be looking at the XNOR gate due to it being easily created with an XOR and NOT gate, and it is rarely used.</div>
                     </div>
-                    <div class="card mb-4" style="top:24%;">
+                    <div class="card mb-4" style="top:23%;">
                         <div class="card-header">Quick Tip</div>
                         <div class="card-body">Check out our article about <a target="_blank" href="logic-gates.html" target="_blank">logic gates and truth tables</a> if you are confused about how you know what the output of a logic gate will be based on the inputs</div>
                     </div>
@@ -349,5 +373,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="bootstrap/blog-post/js/scripts.js"></script>
+        <div id="bottom-container">
+            <span id="close-btn">&times; close</span>
+            <div id="message-bar">
+                <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=ce50a292-2453-4f46-b937-791001ea62b3&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank"><img src="src/ads/Jameco-Electronics-A-728x90.jpg"></a>
+            </div>
+        </div>
     </body>
 </html>
