@@ -6,6 +6,7 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+current = document.getElementById("to-hide").innerHTML;
 collapsed = true;
 
 function revert() {
@@ -27,7 +28,8 @@ function toc() {
     searchs = cards[0].innerHTML;
     document.getElementsByClassName("col-lg-4")[0].style.display = "none";
     document.getElementById("mobile-top").style.display = "block";
-    document.getElementById("to-hide").innerHTML += "<div style='margin-top:10px;' class='card mb-4'>"+searchs+"</div><div class='card mb-4'>"+tc+"</div>"; //+document.getElementsByClassName("row")[0].innerHTML;
+    document.getElementById("to-hide").innerHTML = "<div class='card mb-4'>"+searchs+"</div><div class='card mb-4'>"+tc+"</div>"
+    document.getElementById("to-hide").innerHTML += current;
     document.querySelectorAll(".side-card-mobile").forEach(element => {
       element.style.display = "block";
     });
@@ -47,9 +49,13 @@ window.addEventListener("resize", () => {
   }
 });
 
-document.getElementById("close-btn").addEventListener("click", function() {
-  document.getElementById("bottom-container").style.display = "none";
-});
+try {
+  document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("bottom-container").style.display = "none";
+  });
+} catch (TypeError) {
+
+}
 
 document.getElementById("collapse-btn").addEventListener("click", function() {
   if (collapsed) {
