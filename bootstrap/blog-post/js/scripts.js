@@ -12,6 +12,7 @@ origcards = document.getElementsByClassName("col-lg-4")[0].getElementsByClassNam
 function revert() {
     document.getElementsByClassName("row")[0].innerHTML = originalRow;
     document.getElementsByClassName("col-lg-4")[0].getElementsByClassName("card").innerHTML = origcards;
+    document.getElementsByClassName("side-card-mobile").style.display = "none";
 }
 
 function search() {
@@ -26,13 +27,16 @@ function toc() {
     const elementsArray = Array.from(cards);
     elementsArray.forEach(el => el.remove());
     document.getElementsByClassName("row")[0].innerHTML = "<div class='col-lg-4'><div class='card mb-4'>"+searchs+"</div><div class='card mb-4'>"+tc+"</div></div>"+document.getElementsByClassName("row")[0].innerHTML;
+    document.querySelectorAll(".side-card-mobile").forEach(element => {
+      element.style.display = "block";
+    });
 }
-if (window.innerWidth <= 600) {
+
+if (window.innerWidth <= 991) {
     toc();
 }
 
 window.addEventListener("resize", () => {
-  // Your code here
   if (window.innerWidth <= 991) {
     toc();
   } else {
