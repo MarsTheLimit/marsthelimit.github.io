@@ -95,14 +95,14 @@
                         <!-- Post content-->
                         <section class="mb-5">
                             <p class="fs-5 mb-4">
-                                Binary numbers are commonly referenced in the digital age, but many still don’t understand how they work. But what exactly is it? The binary number system explained simply is a base-2 number system. Our number system (1, 2, 3, 4, 5, etc.) is a base-10 system. Base-2 means that it only has two possible digits: 1 or 0. This is called true/false logic. If we have a perfectly good number system already in place, then why do we need a binary system? The reason lies in understanding how computers use binary with digital logic.
+                                Binary numbers are commonly referenced in the digital age, but many still don't understand how they work. But what exactly is it? The binary number system explained simply is a base-2 number system. Our number system (1, 2, 3, 4, 5, etc.) is a base-10 system. Base-2 means that it only has two possible digits: 1 or 0. This is called true/false logic. If we have a perfectly good number system already in place, then why do we need a binary system? The reason lies in understanding how computers use binary with digital logic.
                             </p>
                             <h2 id="digital-electronics" class="fw-bolder mb-4 mt-5">Digital Electronics</h2>
                             <p class="fs-5 mb-4">
-                                When someone says their device is digital, that means their device runs on <a target="_blank" href="boolean-logic-explained.html">Boolean logic</a>. In the simplest terms, Boolean logic is a light switch. It is either on or off. There's no in between. <a target="_blank" href="logic-gates.html">Logic gates</a> operate using Boolean logic, where inputs and outputs are either true or false. Essentially, digital computation means Boolean logic. You may have seen a connection between what you know about the binary system so far and Boolean logic. Boolean logic can only have 2 different states (on, off, true, false), and binary can also only have two states. This is known as digital logic. When I say digital logic is processing ones or zeroes, they aren’t literally processing ones and zeroes. A 1 represents a voltage running through a wire that is higher than the threshold voltage in a circuit. The threshold voltage is the minimum voltage that can be considered a “1”. Anything below, and it's a 0. 
+                                When someone says their device is digital, that means their device runs on <a target="_blank" href="boolean-logic-explained.html">Boolean logic</a>. In the simplest terms, Boolean logic is a light switch. It is either on or off. There's no in between. <a target="_blank" href="logic-gates.html">Logic gates</a> operate using Boolean logic, where inputs and outputs are either true or false. Essentially, digital computation means Boolean logic. You may have seen a connection between what you know about the binary system so far and Boolean logic. Boolean logic can only have 2 different states (on, off, true, false), and binary can also only have two states. This is known as digital logic. When I say digital logic is processing ones or zeroes, they aren't literally processing ones and zeroes. A 1 represents a voltage running through a wire that is higher than the threshold voltage in a circuit. The threshold voltage is the minimum voltage that can be considered a “1”. Anything below, and it's a 0. 
                             </p>
                             <p class="fs-5 mb-4">
-                                This creates 2 states, and is also why we use a base-2 system and not the common base-10. In digital logic, we don’t differentiate between 4 and 5 volts. This is <a target="_blank" href="transistors-on-breadboards.html">how transistors work</a>. Let’s dive into how to convert binary to decimal.
+                                This creates 2 states, and is also why we use a base-2 system and not the common base-10. In digital logic, we don't differentiate between 4 and 5 volts. This is <a target="_blank" href="transistors-on-breadboards.html">how transistors work</a>. Let's dive into how to convert binary to decimal.
                             </p>
 
                             <h2 id="binary-decimal" class="fw-bolder mb-4 mt-5">How to Convert Binary to Decimal</h2>
@@ -126,7 +126,76 @@
                                 This works with any binary number. This number has four digits, so it can have 2<sup>4</sup> different combinations. One of those combinations is 0, so a four-digit binary 
                                 number can be any whole number from 0 - 15. Here's a quick chart to help visualize the binary conversion from decimal
                             </p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/decimal-to-bianry-conversion.png" alt="How to convert binary to decimal" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Decimal</th>
+                                    <th>Binary</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0000</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0001</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>0010</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>0011</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>0100</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>0101</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>0110</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>0111</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>1001</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>1010</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>1011</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>1100</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>1101</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>1110</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>1111</td>
+                                </tr>
+                            </table>
                             <div class="side-card-mobile" style="display: none;">
                                 <div class="card mb-4">
                                     <div class="card-header">Nibble vs. Byte</div>
@@ -151,7 +220,76 @@
 
                             <h2 id="hex" class="fw-bolder mb-4 mt-5">Hexadecimal Explained Simply</h2>
                             <p class="fs-5 mb-4">Hexadecimal (also called hex) is a base-16 number system, and it is used for simplifying binary code to a more readable (but still very difficult for large programs) format for humans. The possible characters are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Because the A-F digits aren't traditionally numbers, understanding hexadecimal as a beginner can be tricky. Here's a conversion table for the hex value and the corresponding decimal value:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/hex-to-decimal-conversion.png" alt="hexadecimal to binary conversion table" /></figure>
+                            <table class="d-table">
+                                <tr>
+                                    <th>Hexadecimal</th>
+                                    <th>Decimal</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>A</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
                             <p class="fs-5 mb-4">Choosing a base-16 system may seem odd, but think back to how many combinations 2<sup>4</sup> had. It had 16 total different combinations. Hexadecimal also has 16 total combinations. This makes it very easy to convert a binary number to hexadecimal. If you choose any 1 hexadecimal digit, let's say A, you can convert that directly into a 4-digit binary number. The value for the hex digit A in decimal is 10, and in binary, 10 is 1010. But let's say you were dealing with a byte of information, AA. Because we know an 'A' in hexadecimal is 1010, then this byte would equal 10101010 in binary. Knowing how to convert a hexadecimal number to binary is very important. This is because converting a hexadecimal number into decimal is a complicated process. We can still apply the same equation of binary to decimal, but we just change the base (2<sup>binary place</sup>) to 16.</p>
 
                             <h3 id="hex-decimal" class="fw-bolder mb-4 mt-5">How to Convert Hexadecimal to Decimal</h3>
