@@ -111,7 +111,7 @@
 }
 
 .collapsable {
-  background-color: #aaa;
+  background-color: #e2e2e2;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -124,7 +124,7 @@
 }
 
 #collapse-btn:hover {
-  color: #000;
+  color: #a1a1a1;
 }
 
 #bottom-container {
