@@ -49,3 +49,7 @@ window.addEventListener("resize", () => {
     revert();
   }
 });
+
+document.getElementById("close-btn").addEventListener("click", function() {
+  document.getElementById("bottom-container").style.display = "none";
+});
