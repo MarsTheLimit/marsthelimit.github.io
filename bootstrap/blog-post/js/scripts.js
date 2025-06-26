@@ -6,12 +6,11 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-originalRow = document.getElementsByClassName("row")[0].innerHTML;
-origcards = document.getElementsByClassName("col-lg-4")[0].getElementsByClassName("card");
+collapsed = true;
 
 function revert() {
-    document.getElementsByClassName("row")[0].innerHTML = originalRow;
-    document.getElementsByClassName("col-lg-4")[0].getElementsByClassName("card").innerHTML = origcards;
+    document.getElementById("mobile-top").style.display = "none";
+    document.getElementsByClassName("col-lg-4")[1].style.display = "block";
     document.querySelectorAll(".side-card-mobile").forEach(element => {
       element.style.display = "none";
     });
@@ -23,12 +22,12 @@ function search() {
 }
 
 function toc() {
-    cards = document.getElementsByClassName("col-lg-4")[0].getElementsByClassName("card");
-    tc = cards[1].innerHTML
+    cards = document.getElementsByClassName("col-lg-4")[1].getElementsByClassName("card");
+    tc = cards[1].innerHTML;
     searchs = cards[0].innerHTML;
-    const elementsArray = Array.from(cards);
-    elementsArray.forEach(el => el.remove());
-    document.getElementsByClassName("row")[0].innerHTML = "<div class='col-lg-4'><div class='card mb-4'>"+searchs+"</div><div class='card mb-4'>"+tc+"</div></div>"+document.getElementsByClassName("row")[0].innerHTML;
+    document.getElementsByClassName("col-lg-4")[0].style.display = "none";
+    document.getElementById("mobile-top").style.display = "block";
+    document.getElementById("to-hide").innerHTML += "<div style='margin-top:10px;' class='card mb-4'>"+searchs+"</div><div class='card mb-4'>"+tc+"</div>"; //+document.getElementsByClassName("row")[0].innerHTML;
     document.querySelectorAll(".side-card-mobile").forEach(element => {
       element.style.display = "block";
     });
@@ -37,9 +36,7 @@ function toc() {
 if (window.innerWidth <= 991) {
     toc();
 } else {
-  document.querySelectorAll(".side-card-mobile").forEach(element => {
-      element.style.display = "none";
-    });
+  revert();
 }
 
 window.addEventListener("resize", () => {
@@ -52,4 +49,15 @@ window.addEventListener("resize", () => {
 
 document.getElementById("close-btn").addEventListener("click", function() {
   document.getElementById("bottom-container").style.display = "none";
+});
+
+document.getElementById("collapse-btn").addEventListener("click", function() {
+  if (collapsed) {
+    document.getElementById("to-hide").style.display = "block";
+    document.getElementById("collapse-btn").innerHTML = "<span id='collapse-btn'>Collapse</span>";
+  } else {
+    document.getElementById("to-hide").style.display = "none";
+    document.getElementById("collapse-btn").innerHTML = "<span id='collapse-btn'>Show</span>";
+  }
+  collapsed = !collapsed;
 });

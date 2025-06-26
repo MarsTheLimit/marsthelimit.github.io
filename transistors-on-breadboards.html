@@ -174,9 +174,34 @@
         </nav>
         <div class="container mt-5">
             <div class="row">
+                <div id="mobile-top" class='col-lg-4 collapsable'>
+                    <span id='collapse-btn'>Show</span>
+                    <div id='to-hide' style="display: none;">
+                        <div class="card mb-4">
+                            <div class="card-header">Components Needed (Linked to <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=b07c4e04-749f-4785-be01-5d1173782a29&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank">Jameco.com</a>)</div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="https://alnk.to/9IgaLjp">BC547 Transistor</a></li>
+                                    <li>Resisors</li>
+                                    <li><ul>
+                                        <li><a href="https://alnk.to/biuZAEO">220Ω</a></li>
+                                        <li><a href="https://alnk.to/1XYPBqe">1KΩ</a></li>
+                                    </ul></li>
+                                    <li><a href="https://alnk.to/faDFaBY">Jumper Wires</a></li> 
+                                    <li><a href="https://alnk.to/6IHi5sm">Pushbuttons</a></li>
+                                    <li><a href="https://alnk.to/9TaVK96">Breadboard</a></li>
+                                    <li>5V Power Supply - I usually use an old iPhone charger and cut it to use the USB side. You can also use batteries if needed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-8">
                     <!-- Post content-->
                     <article>
+                        <div class="side-card-mobile">
+                            
+                        </div>
                         <!-- Post header-->
                         <header class="mb-4">
                             <!-- Post title-->
@@ -211,12 +236,24 @@
                                 <li>Emitter - where current flows out</li>
                             </ul>
                             <p class="fs-5 mb-4">
-                                When a small current is present at the base, then the transistor turns to the “on” state, which allows the current present at the collector to flow to the emitter.
+                                When a small current is present at the base, then the transistor turns to the “on” state, which allows the current present at the collector to flow to the emitter.</p>
+                            <p class="fs-5 mb-4">
                                 With no current at the base, the transistor is “off” and the current from the collector is unable to flow to the emitter.
                             </p>
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Current</div>
+                                    <div class="card-body">Current, or electric current, is just a way of saying the flow of electricity within a circuit. Current is measured in Amperes (A).</div>
+                                </div>
+                            </div>
                             <h4 class="fs-5 mb-4">BC547 Transistor Pinout</h4>
                             <figure class="mb-4"><img class="img-fluid rounded" src="src/bc547-transistor-pinout.png" alt="Pinout of an BC547 NPN Transistor" /></figure>
-
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Quick Note</div>
+                                    <div class="card-body">the pinout is demonstrated with the curved part of the transistor facing away</div>
+                                </div>
+                            </div>
                             <h2 id="transistor-switch" class="fw-bolder mb-4 mt-5">How to Build a Simple Transistor Switch</h2>
                             <p class="fs-5 mb-4">To build a standard transistor switch, here are the steps:</p>
                             <ul class="fs-5 mb-4">
@@ -228,7 +265,12 @@
                             <figure class="mb-4"><img class="img-fluid rounded" src="src/transistor-switch-schematic.png" alt="Schematic for transistor switch" /></figure>
                             <p class="fs-5 mb-4">In most schematics, GND will mean ground. We can apply this circuit in real life by using a <a target="_blank" href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all">breadboard</a>:</p>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/h9MDyaPbAYs"></iframe>
-
+                            <div class="side-card-mobile">
+                                <div class="card mb-4">
+                                    <div class="card-header">Try It!</div>
+                                    <div class="card-body">What happens when you try flipping the 5V and GND connections? Breadboards make circuits very easy to change to experiment and fix errors.</div>
+                                </div>
+                            </div>
                             <h2 id="transistor-gate" class="fw-bolder mb-4 mt-5">Building Logic Gates with Transistors</h2>
                             <p class="fs-5 mb-4">
                                 Logic gates are simply transistors connected either in series or parallel. There can be any number of transistors in a logic gate, depending on how many inputs 
@@ -298,7 +340,7 @@
                             </div>
                             <h2 id="special-thanks" class="fw-bolder mb-4 mt-5">Special Thanks to Jameco</h2>
                             <p class="fs-5 mb-4">
-                                This is a little thank you to <a href="jameco.com" target="_blank">jameco.com</a> for supplying me with all my electronic needs for projects like this one.
+                                This is a little thank you to <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=b07c4e04-749f-4785-be01-5d1173782a29&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank">jameco.com</a> for supplying me with all my electronic needs for projects like this one.
                                 I get most of my parts through this website, and they have yet to fail me in getting me my parts quickly, reliably, and easily. I would recommend using this
                                 site to satisfy all your electronic projects' needs, as they are honest and trustworthy.
                             </p>
@@ -343,25 +385,25 @@
                         </div>
                     </div>
                     <div class="card mb-4">
-                        <div class="card-header">Components Needed (Linked to Jameco)</div>
+                        <div class="card-header">Components Needed (Linked to <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=b07c4e04-749f-4785-be01-5d1173782a29&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank">Jameco.com</a>)</div>
                         <div class="card-body">
                             <ul class="list-unstyled mb-0">
-                                <li><a href="https://www.jameco.com/z/BC548B-Major-Brands-Transistor-BC548B-TO-92-Transistor-NPN-Switch_254781.html">BC547 Transistor</a></li>
+                                <li><a href="https://alnk.to/9IgaLjp">BC547 Transistor</a></li>
                                 <li>Resisors</li>
                                 <li><ul>
-                                    <li><a href="https://www.jameco.com/z/CF1-4W221JRC-Jameco-ValuePro-Carbon-Film-Resistor-220-Ohm-1-4-Watt-5-_690700.html">220Ω</a></li>
-                                    <li><a href="https://www.jameco.com/z/CF1-4W102JRC-Jameco-ValuePro-Resistor-Carbon-Film-1k-Ohm-1-4-Watt-5-_690865.html">1KΩ</a></li>
+                                    <li><a href="https://alnk.to/biuZAEO">220Ω</a></li>
+                                    <li><a href="https://alnk.to/1XYPBqe">1KΩ</a></li>
                                 </ul></li>
-                                <li><a href="https://www.jameco.com/z/ZW-MM-20-JVP-Jameco-ValuePro-Zipped-40-Piece-20cm-Male-to-Male-Colored-Jumper-Wires_2260738.html">Jumper Wires</a></li> 
-                                <li><a href="https://www.jameco.com/z/TL1105F160R-JVP-Jameco-ValuePro-Tactile-Switch-Off-Momentary-On-Single-Pole-Single-Throw-Round-Button-PC-Pins-0-05-Amp-12-Volt-Through-Hole_119011.html?CID=MERCH">Pushbuttons</a></li>
-                                <li><a href="https://www.jameco.com/z/WBU-301-R-Jameco-ValuePro-400-Point-Solderless-Breadboard-3-3-Lx2-1-W_20601.html?CID=MERCH">Breadboard</a></li>
+                                <li><a href="https://alnk.to/faDFaBY">Jumper Wires</a></li> 
+                                <li><a href="https://alnk.to/6IHi5sm">Pushbuttons</a></li>
+                                <li><a href="https://alnk.to/9TaVK96">Breadboard</a></li>
                                 <li>5V Power Supply - I usually use an old iPhone charger and cut it to use the USB side. You can also use batteries if needed.</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Side widget-->
                     <div class="card mb-4">
-                        <div class="card-header">Topic: Current</div>
+                        <div class="card-header">Current</div>
                         <div class="card-body">Current, or electric current, is just a way of saying the flow of electricity within a circuit. Current is measured in Amperes (A).</div>
                     </div>
                     <div class="card mb-4">

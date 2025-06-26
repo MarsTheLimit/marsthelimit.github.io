@@ -110,6 +110,23 @@
   }
 }
 
+.collapsable {
+  background-color: #aaa;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#collapse-btn {
+  color: white;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#collapse-btn:hover {
+  color: #000;
+}
+
 #bottom-container {
   position: fixed;
   bottom: 0;
