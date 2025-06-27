@@ -11,7 +11,7 @@ collapsed = true;
 
 function revert() {
     document.getElementById("mobile-top").style.display = "none";
-    document.getElementsByClassName("col-lg-4")[1].style.display = "block";
+    document.getElementsByClassName("col-lg-4")[3].style.display = "block";
     document.querySelectorAll(".side-card-mobile").forEach(element => {
       element.style.display = "none";
     });
@@ -23,7 +23,7 @@ function search() {
 }
 
 function toc() {
-    cards = document.getElementsByClassName("col-lg-4")[1].getElementsByClassName("card");
+    cards = document.getElementsByClassName("col-lg-4")[3].getElementsByClassName("card");
     tc = cards[1].innerHTML;
     searchs = cards[0].innerHTML;
     document.getElementsByClassName("col-lg-4")[0].style.display = "none";
@@ -35,11 +35,24 @@ function toc() {
     });
 }
 
+function setSocialsDis(cont) {
+  if (window.innerWidth <= 991) {
+    socialsDis = 100;
+  } 
+  else if (991 < window.innerWidth <= 1199) {
+    socialsDis = 25;
+  } else {
+    socialsDis = 20;
+  }
+  cont.style.width= socialsDis + "%";
+}
+
+const cont = document.createElement("div");
+
 function addShares() {
-  const cont = document.createElement("div");
-  cont.className = "row";
+  cont.className = "social-row";
   cont.style.marginTop = '10px';
-  cont.style.width= "20%";
+  setSocialsDis(cont);
   const row1 = document.createElement("div");
   row1.className = "col-lg-4";
   const row2 = document.createElement("div");
@@ -72,6 +85,7 @@ if (window.innerWidth <= 991) {
 }
 
 window.addEventListener("resize", () => {
+  setSocialsDis(cont);
   if (window.innerWidth <= 991) {
     toc();
   } else {
