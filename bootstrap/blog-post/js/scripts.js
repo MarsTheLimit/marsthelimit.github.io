@@ -35,6 +35,36 @@ function toc() {
     });
 }
 
+function addShares() {
+  const cont = document.createElement("div");
+  cont.className = "row";
+  cont.style.marginTop = '10px';
+  cont.style.width= "20%";
+  const row1 = document.createElement("div");
+  row1.className = "col-lg-4";
+  const row2 = document.createElement("div");
+  row2.className = "col-lg-4";
+  cont.appendChild(row1);
+  cont.appendChild(row2);
+
+  const fb = document.createElement("div");
+  fb.innerHTML = '<div class="fb-share-button" data-href="' + window.location.href + '" data-layout="" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+ window.location.href +'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img style="margin: 0; height: 35px;" src="src/facebook-icon.png" ></a></div>';
+
+  const x = document.createElement("div");
+  x.innerHTML = '<a href="https://twitter.com/intent/tweet?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img style="height: 35px;" src="src/x-icon.png" ></a>'
+
+  row1.appendChild(fb);
+  row2.appendChild(x);
+
+  headingThing = document.getElementsByTagName("header")[0];
+  document.getElementsByTagName("header")[0].insertBefore(cont, headingThing.children[-1]);
+  const bodyCotent = document.createElement("div");
+  bodyCotent.innerHTML = '<div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"></script>';
+  document.body.prepend(bodyCotent);
+}
+
+addShares();
+
 if (window.innerWidth <= 991) {
     toc();
 } else {
