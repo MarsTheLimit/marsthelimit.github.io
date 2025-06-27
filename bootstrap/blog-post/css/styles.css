@@ -760,6 +760,10 @@ progress {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+.social-row .col-lg-3 {
+  padding: 5px;
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
