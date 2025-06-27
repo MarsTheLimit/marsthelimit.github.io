@@ -6,8 +6,74 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-current = document.getElementById("to-hide").innerHTML;
 collapsed = true;
+
+function createNav() {
+  const navBar = document.createElement("nav");
+  navBar.className = "navbar navbar-expand-lg navbar-dark bg-dark";
+  if (window.location.href.includes("contact")) {
+    navBar.innerHTML = `<div class="container">
+                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                          <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>`;
+  } else if (window.location.href.includes('privacy-policy')) {
+    navBar.innerHTML = `<div class="container">
+                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>`;
+  } else if (window.location.href.includes('about')) {
+    navBar.innerHTML = `<div class="container">
+                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>`;
+  } else {
+    navBar.innerHTML = `<div class="container">
+                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                          <li class="nav-item"><a href="articles.html" class="nav-link active" aria-current="page">Articles</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>`;
+  }
+  document.body.prepend(navBar);
+}
+
+if (window.location.href.includes("articles") || window.location.href.includes('about') || window.location.href.includes('contact') || window.location.href.includes('privacy-policy')) {
+  createNav();
+}
+else {
+current = document.getElementById("to-hide").innerHTML;
+const cont = document.createElement("div");
+
 
 function revert() {
     document.getElementById("mobile-top").style.display = "none";
@@ -51,8 +117,6 @@ function setSocialsDis(cont) {
   cont.style.width= socialsDis + "%";
 }
 
-const cont = document.createElement("div");
-
 function addShares() {
   cont.className = "social-row";
   cont.style.margin = '1px';
@@ -72,16 +136,16 @@ function addShares() {
   cont.appendChild(row4);
 
   const fb = document.createElement("div");
-  fb.innerHTML = '<div class="fb-share-button" data-href="' + window.location.href + '" data-layout="" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+ window.location.href +'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img style="margin: 0; height: 35px;" src="src/facebook-icon.png" ></a></div>';
+  fb.innerHTML = '<div class="fb-share-button" data-href="' + window.location.href + '" data-layout="" data-size="small"><a href="https://www.facebook.com/sharer/sharer.php?u='+ window.location.href +'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank"><img style="margin: 0; height: 35px; width: 35px;" src="src/facebook-icon.png" ></a></div>';
 
   const x = document.createElement("div");
-  x.innerHTML = '<a href="https://twitter.com/intent/tweet?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img style="height: 35px;" src="src/x-icon.png" ></a>'
+  x.innerHTML = '<a href="https://twitter.com/intent/tweet?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img style="height: 35px; width: 35px;" src="src/x-icon.png" ></a>'
 
   const li = document.createElement("div");
-  li.innerHTML = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.href + '&source=MarstheLimit" target="_blank" rel="noopener noreferrer"><img style="height: 35px;" src="src/linkedin-icon.png" ></a>'
+  li.innerHTML = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.href + '&source=MarstheLimit" target="_blank" rel="noopener noreferrer"><img style="height: 35px; width: 35px;" src="src/linkedin-icon.png" ></a>'
 
   const r = document.createElement("div");
-  r.innerHTML = '<a href="https://www.reddit.com/submit?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img style="height: 35px;" src="src/reddit-icon.png" ></a>'
+  r.innerHTML = '<a href="https://www.reddit.com/submit?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img style="height: 35px; width: 35px;" src="src/reddit-icon.png" ></a>'
 
   row1.appendChild(fb);
   row2.appendChild(x);
@@ -96,6 +160,7 @@ function addShares() {
 }
 
 addShares();
+createNav();
 
 if (window.innerWidth <= 991) {
     toc();
@@ -116,9 +181,7 @@ try {
   document.getElementById("close-btn").addEventListener("click", function() {
     document.getElementById("bottom-container").style.display = "none";
   });
-} catch (TypeError) {
-
-}
+} catch (TypeError) {}
 
 document.getElementById("collapse-btn").addEventListener("click", function() {
   if (collapsed) {
@@ -130,3 +193,4 @@ document.getElementById("collapse-btn").addEventListener("click", function() {
   }
   collapsed = !collapsed;
 });
+}
