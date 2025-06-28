@@ -94,7 +94,7 @@
                             </p>
                             <h2 id="pinout" class="fw-bolder mb-4 mt-5">555 Timer Pinout Explained (With Datasheet Details)</h2>
                             <p class="fs-5 mb-4">Using the <a href="https://www.jameco.com/Jameco/Products/ProdDS/27422.pdf" target="_blank">555 timer's datasheet</a>, let's explore the functions of all the pins on the IC. This is what the pinout looks like, taken directly from its datasheet:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-pinout.png" alt="555 timer pinout" /></figure>
+                            <figure class="mb-4"><picture><img class="img-fluid rounded" src="/src/555-timer-pinout.png" alt="555 timer pinout" /></picture></figure>
                             <p class="fs-5 mb-4">Starting with pin 1:</p>
                             <ul class="fs-5 mb-4">
                                 <li>Ground (pin 1). This is indicated by a dot or notch at the top of the IC.</li>
@@ -121,7 +121,7 @@
                             <p class="fs-5 mb-4">If you need a high current output, it is best to run <a href="https://www.sciencedirect.com/topics/engineering/current-amplifier" target="_blank">the output through an amplifier</a>.</p>
                             <h2 id="timing-diagram" class="fw-bolder mb-4 mt-5">How to Read a 555 Timer Timing Diagram</h2>
                             <p class="fs-5 mb-4">Something that will help in this tutorial is understanding timing diagrams. This timing diagram is what the bistable mode of the 555 timer looks like:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-timing-monostable.png" alt="Timing digram example with 555 timer monostable" /></figure>
+                            <figure class="mb-4"><picture><img class="img-fluid rounded" src="/src/555-timer-timing-monostable.png" alt="Timing digram example with 555 timer monostable" /></picture></figure>
                             <p class="fs-5 mb-4">There are a few things to notice. When the line is lower, that means that specific line is at its low logic level state. At the beginning, they all start low. When “Trigger” goes high, then “Output” goes high, indicated by the line being higher than it was.</p>
                             <h2 id="modes" class="fw-bolder mb-4 mt-5">555 Timer Modes: Astable, Monostable, Bistable</h2>
                             <p class="fs-5 mb-4">The 555 timer has 3 modes:</p>
@@ -134,15 +134,15 @@
                             <h3 id="bistable">Bistable</h3>
                             <p class="fs-5 mb-4">The bistable mode, or Schmitt Trigger, functions like an SR Latch (Set-Reset Latch).</p> <!-- LINK NEEDED -->
                             <h4>Schematic</h4>
-                            <figure class="mb-4"><img style="height: 400px;" class="img-fluid rounded" src="src/555-timer-schematic-bistable.png" alt="555 timer in bistable mode schematic" /></figure>
+                            <figure class="mb-4"><picture><img style="height: 400px;" class="img-fluid rounded" src="/src/555-timer-schematic-bistable.png" alt="555 timer in bistable mode schematic" /></picture></figure>
                             <p class="fs-5 mb-4">The button connected to pin 2 (trigger) is the trigger (or set, if thinking about this in SR latch logic), and this turns the output high. The timing diagram of this circuit looks like this:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-timing-bistable.png" alt="555 timer in bistable mode timing diagram" /></figure>
+                            <figure class="mb-4"><picture><img class="img-fluid rounded" src="/src/555-timer-timing-bistable.png" alt="555 timer in bistable mode timing diagram" /></picture></figure>
                             <p class="fs-5 mb-4">The 555 timer will hold a value until either the trigger or the reset button is pressed. This mode is used when you want a value to be stored temporarily.</p>
                             <h4>Breadboard Example</h4>
                             <iframe width="420" height="345" src="https://www.youtube.com/embed/mSK0WVg9PmU"></iframe>
                             <p class="fs-5 mb-4"><i>Notice that the dot at the top of the 555 timer is pointing towards the bottom, indicating that pin 1 is towards the buttons. This is the same for the other circuits.</i></p>
                             <h3 id="astable">Astable</h3>
-                            <figure class="mb-4"><img style="height: 400px;" class="img-fluid rounded" src="src/555-timer-schematic-astable.png" alt="Astable mode 555 timer schematic" /></figure>
+                            <figure class="mb-4"><picture><img style="height: 400px;" class="img-fluid rounded" src="/src/555-timer-schematic-astable.png" alt="Astable mode 555 timer schematic" /></picture></figure>
                             <p class="fs-5 mb-4">The astable mode is an oscillation between low and high. This mode is constantly alternating between a 1 and a 0, hence the name “astable.” When using a 555 timer, you can control the frequency of the oscillation with 2 resistors and a capacitor. If you want to have a precise frequency, you can calculate this frequency by using the values in ohms (Ω) of R<sub>1</sub> and R<sub>2</sub> and in Farads (F) for C<sub>1</sub>.</p>
                             <span class="span-pre">f = <div class="frac">
                                 <span>1.44</span>
@@ -152,13 +152,13 @@
                             <p class="fs-5 mb-4">For example, if I had a 10KΩ resistor as R<sub>1</sub>, a 1KΩ resistor as R<sub>2</sub>, and a 47 μF capacitor as C<sub>1</sub>:</p>
                             <span class="span-pre"><div class="frac"><span>1.44</span><span class="symbol">/</span><span class="bottom">(1000 + 2(10000))0.000047</span></div> = 2.553191489 Hz</span>
                             <p class="fs-5 mb-4">When we take a look at the timing diagram, the 555 timer has a digital output. This means the signal will go straight up and down like so:</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-timing-astable.png" alt="Astable mode 555 timer timing diagram" /></figure>
+                            <figure class="mb-4"><picture><img class="img-fluid rounded" src="/src/555-timer-timing-astable.png" alt="Astable mode 555 timer timing diagram" /></picture></figure>
                             <h4>Breadboard Example</h4>
                             <iframe width="420" height="345" src="https://youtube.com/embed/t86oNnTjoDc"></iframe>
                             <h3 id="monostable">Monostable</h3>
-                            <figure class="mb-4"><img style="height: 400px;" class="img-fluid rounded" src="src/555-timer-schematic-monostable.png" alt="Monostable mode 555 timer schematic" /></figure>
+                            <figure class="mb-4"><picture><img style="height: 400px;" class="img-fluid rounded" src="/src/555-timer-schematic-monostable.png" alt="Monostable mode 555 timer schematic" /></picture></figure>
                             <p class="fs-5 mb-4">The name implies that this mode is stable in one state. This mode will stay in the low state until the Trigger pin on the 555 timer is pressed, which will cause the output to go high for a set amount of time.</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="src/555-timer-timing-monostable.png" alt="Monostable mode 555 timer timing diagram" /></figure>
+                            <figure class="mb-4"><picture><img class="img-fluid rounded" src="/src/555-timer-timing-monostable.png" alt="Monostable mode 555 timer timing diagram" /></picture></figure>
                             <p class="fs-5 mb-4">The amount of time the output stays high is calculated by the ohms (Ω) of R1 and the Farads (F) of C1.</p>
                             <span class="span-pre">T<sub>sec</sub>1.1R1C1</span>
                             <p class="fs-5 mb-4">If I had a 10KΩ resistor and a 47 μF capacitor</p>
@@ -259,7 +259,7 @@
         <div id="bottom-container">
             <span id="close-btn">&times; close</span>
             <div id="message-bar">
-                <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=ce50a292-2453-4f46-b937-791001ea62b3&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank"><img src="src/ads/Jameco-Electronics-A-728x90.jpg"></a>
+                <a href="https://classic.avantlink.com/click.php?tool_type=ml&merchant_link_id=ce50a292-2453-4f46-b937-791001ea62b3&website_id=1c1ff611-ff7d-4039-b706-0b4e04add46f" target="_blank"><picture><img src="/src/ads/Jameco-Electronics-A-728x90.jpg"></picture></a>
             </div>
         </div>
         <!-- Core theme JS-->

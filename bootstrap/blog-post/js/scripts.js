@@ -105,16 +105,16 @@ function addShares() {
   cont.appendChild(row4);
 
   const fb = document.createElement("div");
-  fb.innerHTML = '<div class="fb-share-button" data-href="' + window.location.href + '" data-layout="" data-size="small"><a href="https://www.facebook.com/sharer/sharer.php?u='+ window.location.href +'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank"><img src="src/facebook-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on facebook" ></a></div>';
+  fb.innerHTML = '<div class="fb-share-button" data-href="' + window.location.href + '" data-layout="" data-size="small"><a href="https://www.facebook.com/sharer/sharer.php?u='+ window.location.href +'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" target="_blank"><img src="/src/facebook-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on facebook" ></a></div>';
 
   const x = document.createElement("div");
-  x.innerHTML = '<a href="https://twitter.com/intent/tweet?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img src="src/x-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on x" ></a>'
+  x.innerHTML = '<a href="https://twitter.com/intent/tweet?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img src="/src/x-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on x" ></a>'
 
   const li = document.createElement("div");
-  li.innerHTML = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.href + '&source=MarstheLimit" target="_blank" rel="noopener noreferrer"><img src="src/linkedin-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on LinkedIn" ></a>'
+  li.innerHTML = '<a href="https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.href + '&source=MarstheLimit" target="_blank" rel="noopener noreferrer"><img src="/src/linkedin-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on LinkedIn" ></a>'
 
   const r = document.createElement("div");
-  r.innerHTML = '<a href="https://www.reddit.com/submit?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img src="src/reddit-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on reddit" ></a>'
+  r.innerHTML = '<a href="https://www.reddit.com/submit?url=' + window.location.href + '" target="_blank" rel="noopener noreferrer"><img src="/src/reddit-icon.png" style="margin: 0; height: 35px; width: 35px;" alt="share this article on reddit" ></a>'
 
   row1.appendChild(fb);
   row2.appendChild(x);
