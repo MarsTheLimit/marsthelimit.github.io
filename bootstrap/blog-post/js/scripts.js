@@ -36,7 +36,7 @@ function createNav() {
   }
 }
 
-if (window.location.href.includes("articles") || window.location.href.includes('about') || window.location.href.includes('contact') || window.location.href.includes('privacy-policy')) {
+if (window.location.href.includes("articles/") || window.location.href.includes('about') || window.location.href.includes('contact') || window.location.href.includes('privacy-policy')) {
   createNav();
 }
 else {
