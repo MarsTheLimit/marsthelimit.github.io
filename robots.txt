@@ -1,9 +1,10 @@
 User-agent: *
 Allow: /
 Sitemap: https://marsthelimit.github.io/sitemap.xml
+Sitemap: https://marsthelimit.github.io/articles/sitemap.xml
 
 User-agent: *
-Disallow: /formula-article.html
+Disallow: /articles/formula-article
 Disallow: /nmlr-web/
 Disallow: /interactives/
 Disallow: /adsweb/

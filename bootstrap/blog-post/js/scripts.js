@@ -11,60 +11,29 @@ collapsed = true;
 function createNav() {
   const navBar = document.createElement("nav");
   navBar.className = "navbar navbar-expand-lg navbar-dark bg-dark";
-  if (window.location.href.includes("contact")) {
-    navBar.innerHTML = `<div class="container">
-                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
+  navBar.innerHTML = `<div class="container">
+                  <a href="/" class="navbar-brand">MarsTheLimit</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
-                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                          <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                          <li class="nav-item"><a href="/" class="nav-link" id="navHome">Home</a></li>
+                          <li class="nav-item"><a href="/articles/" class="nav-link" id="navArticles">Articles</a></li>
+                          <li class="nav-item"><a href="/about" class="nav-link" id="navAbout">About</a></li>
+                          <li class="nav-item"><a href="/contact" class="nav-link" id="navContact">Contact</a></li>
                       </ul>
                   </div>
               </div>`;
-  } else if (window.location.href.includes('privacy-policy')) {
-    navBar.innerHTML = `<div class="container">
-                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
-                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                      </ul>
-                  </div>
-              </div>`;
-  } else if (window.location.href.includes('about')) {
-    navBar.innerHTML = `<div class="container">
-                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                          <li class="nav-item"><a href="articles.html" class="nav-link">Articles</a></li>
-                          <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
-                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                      </ul>
-                  </div>
-              </div>`;
-  } else {
-    navBar.innerHTML = `<div class="container">
-                  <a href="index.html" class="navbar-brand">MarsTheLimit</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                          <li class="nav-item"><a href="articles.html" class="nav-link active" aria-current="page">Articles</a></li>
-                          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                      </ul>
-                  </div>
-              </div>`;
-  }
   document.body.prepend(navBar);
+  if (window.location.href.includes("contact")) {
+    document.getElementById("navContact").className += " active";
+    document.getElementById("navContact").setAttribute('aria-current', 'page');
+  } else if (window.location.href.includes('about')) {
+    document.getElementById("navAbout").className += " active";
+    document.getElementById("navAbout").setAttribute('aria-current', 'page');
+  } else {
+    document.getElementById("navArticles").className += " active";
+    document.getElementById("navArticles").setAttribute('aria-current', 'page');
+  }
 }
 
 if (window.location.href.includes("articles") || window.location.href.includes('about') || window.location.href.includes('contact') || window.location.href.includes('privacy-policy')) {
@@ -85,7 +54,7 @@ function revert() {
 
 function search() {
     query = document.getElementById("search-text").value;
-    window.location = "articles.html?q=" + query;
+    window.location = "/articles/?q=" + query;
 }
 
 function toc() {
