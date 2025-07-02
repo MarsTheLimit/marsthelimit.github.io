@@ -76,7 +76,7 @@ function setSocialsDis(cont) {
   cont.style.width= socialsDis + "%";
 }
 
-function addShares() {
+function addShares(cont) {
   cont.className = "social-row";
   cont.style.margin = '1px';
   cont.style.marginTop = '5px';
@@ -127,7 +127,7 @@ console.log("else");
 current = document.getElementById("to-hide").innerHTML;
 const cont = document.createElement("div");
 
-addShares();
+addShares(cont);
 createNav();
 
 if (window.innerWidth <= 991) {
