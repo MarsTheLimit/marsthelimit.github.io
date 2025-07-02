@@ -5,6 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+console.log("Script loaded.");
 
 collapsed = true;
 
@@ -23,26 +24,22 @@ function createNav() {
                       </ul>
                   </div>
               </div>`;
+
   document.body.prepend(navBar);
-  if (window.location.href.includes("contact")) {
-    document.getElementById("navContact").className += " active";
-    document.getElementById("navContact").setAttribute('aria-current', 'page');
-  } else if (window.location.href.includes('about')) {
-    document.getElementById("navAbout").className += " active";
-    document.getElementById("navAbout").setAttribute('aria-current', 'page');
-  } else {
+  console.log('created navbar');
+
+   if (window.location.pathname.includes('articles')) {
     document.getElementById("navArticles").className += " active";
     document.getElementById("navArticles").setAttribute('aria-current', 'page');
+    console.log("here")
+  } if (window.location.pathname.includes("contact")) {
+    document.getElementById("navContact").className += " active";
+    document.getElementById("navContact").setAttribute('aria-current', 'page');
+  } if (window.location.pathname.includes('about')) {
+    document.getElementById("navAbout").className += " active";
+    document.getElementById("navAbout").setAttribute('aria-current', 'page');
   }
 }
-
-if (window.location.href.includes("articles/") || window.location.href.includes('about') || window.location.href.includes('contact') || window.location.href.includes('privacy-policy')) {
-  createNav();
-}
-else {
-current = document.getElementById("to-hide").innerHTML;
-const cont = document.createElement("div");
-
 
 function revert() {
     document.getElementById("mobile-top").style.display = "none";
@@ -128,6 +125,15 @@ function addShares() {
   document.body.prepend(bodyCotent);
 }
 
+if (!window.location.pathname.includes('/articles/')) {
+  console.log("if");
+  createNav();
+} else {
+console.log("else");
+
+current = document.getElementById("to-hide").innerHTML;
+const cont = document.createElement("div");
+
 addShares();
 createNav();
 
@@ -163,3 +169,5 @@ document.getElementById("collapse-btn").addEventListener("click", function() {
   collapsed = !collapsed;
 });
 }
+
+console.log("hello")
