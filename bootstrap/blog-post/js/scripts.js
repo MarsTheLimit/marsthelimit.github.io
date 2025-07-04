@@ -1,5 +1,3 @@
-console.log("Script loaded.");
-
 collapsed = true;
 
 function createNav() {
@@ -19,12 +17,10 @@ function createNav() {
               </div>`;
 
   document.body.prepend(navBar);
-  console.log('created navbar');
 
   if (window.location.pathname.includes('articles')) {
     document.getElementById("navArticles").className += " active";
     document.getElementById("navArticles").setAttribute('aria-current', 'page');
-    console.log("here")
   } if (window.location.pathname.includes("contact")) {
     document.getElementById("navContact").className += " active";
     document.getElementById("navContact").setAttribute('aria-current', 'page');
@@ -42,9 +38,10 @@ function revert() {
     });
 }
 
-function search() {
+function search(blogs=false) {
     query = document.getElementById("search-text").value;
-    window.location = "/articles/?q=" + query;
+    if (blogs) window.location = "/articles/?q=" + query;
+    else window.location = "/blogs/?q=" + query;
 }
 
 function toc() {
@@ -118,16 +115,14 @@ function addShares(cont) {
   document.body.prepend(bodyCotent);
 }
 
-if (!window.location.pathname.includes('/articles/')) {
-  createNav();
-} else {
 createNav();
 
+if (!window.location.pathname.includes('/articles/') && !window.location.pathname.includes('/blogs/')) {
+} else {
 current = document.getElementById("to-hide").innerHTML;
 const cont = document.createElement("div");
 
 addShares(cont);
-createNav();
 
 if (window.innerWidth <= 991) {
     toc();
@@ -161,5 +156,3 @@ document.getElementById("collapse-btn").addEventListener("click", function() {
   collapsed = !collapsed;
 });
 }
-
-console.log("hello")
