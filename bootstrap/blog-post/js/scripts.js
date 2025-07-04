@@ -119,10 +119,9 @@ function addShares(cont) {
 }
 
 if (!window.location.pathname.includes('/articles/')) {
-  console.log("if");
   createNav();
 } else {
-console.log("else");
+createNav();
 
 current = document.getElementById("to-hide").innerHTML;
 const cont = document.createElement("div");
