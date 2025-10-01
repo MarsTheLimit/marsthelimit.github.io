@@ -3,6 +3,7 @@ Allow: /
 
 Sitemap: https://marsthelimit.github.io/sitemap.xml
 Sitemap: https://marsthelimit.github.io/articles/sitemap.xml
+Sitemap: https://marsthelimit.github.io/pages-sitemap.xml
 
 Disallow: /articles/formula-article
 Disallow: /nmlr-web/
