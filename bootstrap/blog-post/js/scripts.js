@@ -12,6 +12,7 @@ function createNav() {
                           <li class="nav-item"><a href="/articles/" class="nav-link" id="navArticles">Articles</a></li>
                           <li class="nav-item"><a href="/about" class="nav-link" id="navAbout">About</a></li>
                           <li class="nav-item"><a href="/contact" class="nav-link" id="navContact">Contact</a></li>
+                          <li class="nav-item"><a href="/contact" class="nav-link" id="navContact">Games</a></li>
                       </ul>
                   </div>
               </div>`;
