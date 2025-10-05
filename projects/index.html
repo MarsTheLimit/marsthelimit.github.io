@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Articles</title>
+  <link rel="icon" type="image/x-icon" href="/src/favicon.ico" />
+  <link rel="canonical" href="https://marsthelimit.github.io/projects/" />
+  <link href="/bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .search-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .search-box {
+      border-radius: 0.5rem;
+      border: 1px solid #ced4da;
+      padding: 0.75rem 1rem;
+    }
+
+    .search-results a {
+      text-decoration: none;
+      color: #122c52;
+      font-weight: 500;
+    }
+
+    .search-results a:hover {
+      text-decoration: underline;
+    }
+
+    .search-results li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .search-results li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5 search-wrapper">
+    <h1 class="mb-4 text-center display-6">Search Projects</h1>
+    <input
+      type="text"
+      id="searchInput"
+      class="form-control form-control-lg search-box mb-4"
+      placeholder="Type to search articles..."
+    />
+
+    <ul id="searchResults" class="list-unstyled search-results shadow-sm bg-white p-3 rounded">
+      <!-- Search results go here -->
+    </ul>
+  </div>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="/privacy-policy" class="text-white text-decoration-underline">Privacy Policy</a></p></div>
+        </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="/bootstrap/blog-post/js/scripts.js"></script>
+  <script>const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    const articles = [
+      { title: "Pretzel Clicker", url: "pretzel-clicker", description:"An idle clicker game where you get pretzels through posting videos on MeTube, getting subscribers, and investing in the stock market." },
+    ];
+
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+    function displayResults(query) {
+      const filtered = articles.filter(article =>
+        article.title.toLowerCase().includes(query.toLowerCase())
+      );
+
+      searchResults.innerHTML = filtered.length
+        ? filtered.map(article => `<li><a href="${article.url}"><div class="card mb-4"><div class="card-header">${article.title}</div><div class="card-body">${article.description}</div></div></a></li>`).join("")
+        : `<li class="text-muted">No matching articles found.</li>`;
+    }
+
+    searchInput.addEventListener("input", e => displayResults(e.target.value));
+    displayResults("");
+    if (q) {
+      document.getElementById('searchInput').value = q;
+      displayResults(q);
+    }
+  </script>
+</body>
+</html>

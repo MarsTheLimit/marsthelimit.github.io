@@ -12,7 +12,7 @@ function createNav() {
                           <li class="nav-item"><a href="/articles/" class="nav-link" id="navArticles">Articles</a></li>
                           <li class="nav-item"><a href="/about" class="nav-link" id="navAbout">About</a></li>
                           <li class="nav-item"><a href="/contact" class="nav-link" id="navContact">Contact</a></li>
-                          <li class="nav-item"><a href="/games/downloads" class="nav-link" id="navContact">Games</a></li>
+                          <li class="nav-item"><a href="/projects/" class="nav-link" id="navProjects">Projects</a></li>
                       </ul>
                   </div>
               </div>`;
@@ -28,6 +28,9 @@ function createNav() {
   } if (window.location.pathname.includes('about')) {
     document.getElementById("navAbout").className += " active";
     document.getElementById("navAbout").setAttribute('aria-current', 'page');
+  } if (window.location.pathname.includes('projects')) {
+    document.getElementById("navProjects").className += " active";
+    document.getElementById("navProjects").setAttribute('aria-current', 'page');
   }
 }
 
