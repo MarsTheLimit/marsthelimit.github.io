@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://marsthelimit.com/articles/logic-gates</loc>
+        <loc>https://marsthelimit.com/articles/logic-gate-types-truth-tables-and-symbols-for-beginners</loc>
         <lastmod>2025-06-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/electronics-at-home</loc>
+        <loc>https://marsthelimit.com/articles/tools-and-components-every-beginner-needs-to-make-circuits</loc>
         <lastmod>2025-06-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/boolean-logic-explained</loc>
+        <loc>https://marsthelimit.com/articles/boolean-logic-explained-and-or-not-for-beginners</loc>
         <lastmod>2025-06-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/boolean-for-programmers</loc>
+        <loc>https://marsthelimit.com/articles/boolean-in-programming-operators-and-syntax-for-beginners</loc>
         <lastmod>2025-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/transistors-on-breadboards</loc>
+        <loc>https://marsthelimit.com/articles/logic-gate-types-truth-tables-and-symbols-for-beginners-on-breadboards-beginner-transistor-projects</loc>
         <lastmod>2025-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -58,14 +58,14 @@
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/ohms-law</loc>
+        <loc>https://marsthelimit.com/articles/guide-to-ohms-law-resistance-and-resistors-for-beginners</loc>
         <lastmod>2025-06-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.com/articles/faradays-law</loc>
+        <loc>https://marsthelimit.com/articles/faradays-law-capacitance-and-capacitors-for-beginners</loc>
         <lastmod>2025-06-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
