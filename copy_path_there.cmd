@@ -1,1 +1,1 @@
-xcopy "C:\Users\Bbens\MarsTheLimit\marsthelimit.github.io" "C:\Users\Bbens\OneDrive\Documents\GitHub\marsthelimit.github.io" /s /e
+xcopy "C:\Users\Bbens\MarsTheLimit\marsthelimit.com" "C:\Users\Bbens\OneDrive\Documents\GitHub\marsthelimit.com" /s /e

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://marsthelimit.github.io/pages-sitemap.xml</loc>
+    <loc>https://marsthelimit.com/pages-sitemap.xml</loc>
     <lastmod>2025-06-15</lastmod>
     <changefreq>yearly</changefreq>
   </sitemap>
   <sitemap>
-    <loc>https://marsthelimit.github.io/articles/articles-sitemap.xml</loc>
+    <loc>https://marsthelimit.com/articles/articles-sitemap.xml</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
   </sitemap>
   <sitemap>
-    <loc>https://marsthelimit.github.io/projects/projects-sitemap.xml</loc>
+    <loc>https://marsthelimit.com/projects/projects-sitemap.xml</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
   </sitemap>

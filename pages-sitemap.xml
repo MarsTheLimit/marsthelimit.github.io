@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://marsthelimit.github.io/</loc>
+        <loc>https://marsthelimit.com/</loc>
         <lastmod>2025-06-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/contact</loc>
+        <loc>https://marsthelimit.com/contact</loc>
         <lastmod>2025-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/privacy-policy</loc>
+        <loc>https://marsthelimit.com/privacy-policy</loc>
         <lastmod>2025-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/about</loc>
+        <loc>https://marsthelimit.com/about</loc>
         <lastmod>2025-05-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/articles/</loc>
+        <loc>https://marsthelimit.com/articles/</loc>
         <lastmod>2025-06-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://marsthelimit.github.io/projects/</loc>
+        <loc>https://marsthelimit.com/projects/</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
