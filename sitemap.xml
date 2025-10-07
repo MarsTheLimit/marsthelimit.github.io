@@ -3,16 +3,13 @@
   <sitemap>
     <loc>https://marsthelimit.com/pages-sitemap.xml</loc>
     <lastmod>2025-06-15</lastmod>
-    <changefreq>yearly</changefreq>
   </sitemap>
   <sitemap>
     <loc>https://marsthelimit.com/articles/articles-sitemap.xml</loc>
     <lastmod>2025-10-05</lastmod>
-    <changefreq>monthly</changefreq>
   </sitemap>
   <sitemap>
     <loc>https://marsthelimit.com/projects/projects-sitemap.xml</loc>
     <lastmod>2025-10-05</lastmod>
-    <changefreq>monthly</changefreq>
   </sitemap>
 </sitemapindex>
