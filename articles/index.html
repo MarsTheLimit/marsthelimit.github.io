@@ -6,10 +6,11 @@
   <title>Search Articles</title>
   <link rel="icon" type="image/x-icon" href="/src/favicon.ico" />
   <link rel="canonical" href="https://marsthelimit.com/articles/" />
-  <link href="/bootstrap/blog-post/css/styles.css" rel="stylesheet" />
+  <link href="https://marsthelimit.com/bootstrap/blog-post/css/styles.css" rel="stylesheet" />
   <style>
     body {
       background-color: #f8f9fa;
+       min-height: 100vh;
     }
 
     .search-wrapper {
@@ -44,7 +45,7 @@
   </style>
 </head>
 <body>
-  <div class="container py-5 search-wrapper">
+  <div stlye="flex-grow: 1;" class="container py-5 search-wrapper">
     <h1 class="mb-4 text-center display-6">Search Articles</h1>
     <input
       type="text"
@@ -58,7 +59,7 @@
     </ul>
   </div>
   <!-- Footer-->
-  <footer class="py-5 bg-dark" style="position: fixed; bottom: 0; width: 100%;">
+  <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="/privacy-policy" class="text-white text-decoration-underline">Privacy Policy</a></p></div>
         </footer>
   <!-- Bootstrap core JS-->
@@ -70,12 +71,12 @@
     const articles = [
       { title: "Faraday's Law, Capacitance, and Capacitors for Beginners", url: "faradays-law", description:"Faraday's Law is important for every beginner in electronics to learn. This article helps beginners understand what capacitance, inductance, motors, and capacitors are."},
       { title: "Ohm's Law and Resistors", url: "ohms-law", description:"Learn what Ohm's Law is, how resistance works, how to use resistors safely, and how to read resistor color bands. A complete beginner's guide to electronics."},
-      { title: "555 Timer", url: "555-timer-circuits", description:"Learn how to use a 555 timer in a breadboard circuit with this beginner-friendly guide. Explore pinouts, modes, formulas, and real-world project examples."},
+      { title: "555 Timer", url: "using-a-555-timer-easy-breadboard-circuits-for-beginners", description:"Learn how to use a 555 timer in a breadboard circuit with this beginner-friendly guide. Explore pinouts, modes, formulas, and real-world project examples."},
       { title: "Logic Gates on Breadboards", url: "real-life-logic-circuits", description:"Learn how to apply logic gates in real life through logic gate ICs and shift regsiters. Shift registers are made from logic gates."},
-      { title: "Binary Arithmetic", url: "binary-math", description:"Learn how to add and subtract binary numbers with the two's complement. Easy how to tutorial for beginners. Learn how to count, add, and subtract in the binary base-2 number system."},
+      { title: "Binary Arithmetic", url: "best-way-to-add-or-subtract-binary-numbers-twos-complement", description:"Learn how to add and subtract binary numbers with the two's complement. Easy how to tutorial for beginners. Learn how to count, add, and subtract in the binary base-2 number system."},
       { title: "DIY Electronics", url: "electronics-at-home", description:"A tutorial for beginners in electronics looking to set up their first few circuits. Learn about basic tools and components needed and how these components work."},
       { title: "Logic Gates", url: "logic-gates", description:"A guide for beginners on how logic gates work. Covers all logic gates used in digital computers. Easy to understand, and includes visuals like truth tables."},
-      { title: "Binary and Hexadecimal Explained", url: "binary-explained", description:"Binary and Hexadecimal explained for beginners. Explore decimal to binary conversions, binary to hex, and hex to decimal. Includes examples."},
+      { title: "Binary and Hexadecimal Explained", url: "binary-and-hexadecimal-conversion-and-examples-for-beginners", description:"Binary and Hexadecimal explained for beginners. Explore decimal to binary conversions, binary to hex, and hex to decimal. Includes examples."},
       { title: "Boolean Logic Explained", url: "boolean-logic-explained", description:"Learn the basics of Boolean logic—true/false logic used in digital circuits, programming, and computer architecture with AND, OR, and NOT operations."},
       { title: "Boolean Logic In Programming", url: "boolean-for-programmers", description:"Learn the basics of Boolean logic: true/false logic used in programming, and the symbols behind the AND, NOT, and OR boolean operators. Beginner tutorial."},
       { title: "Transistor Logic Gates", url: "transistors-on-breadboards", description:"Transistors are what make up logic gates. They perform the underlying Boolean operations in the blink of an eye. Learn how to make logic gates on breadboards."},
