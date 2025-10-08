@@ -12,6 +12,18 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://marsthelimit.com/bootstrap/blog-post/css/styles.css" rel="stylesheet" />
 
+        <style>
+            .alpha-list {
+                list-style-type: none; /* Remove default list style */
+                counter-reset: alpha-counter; /* Initialize a custom counter */
+            }
+
+            .alpha-list li::before {
+                counter-increment: alpha-counter; /* Increment the counter for each list item */
+                content: "(" counter(alpha-counter, lower-alpha) ") "; /* Display the counter with parentheses */
+            }
+        </style>
+
     </head>
     <body>
         <div class="container mt-5">
@@ -23,31 +35,74 @@
                         <header class="mb-4">
                             <!-- Post title-->
                             <h1 class="fw-bolder mb-1">MarsTheLimit's Privacy Policy</h1>
+                            <i><p style="font-size: small">Last Updated on October 7, 2025</p></i>
                         </header>
                         <section class="mb-5">
-                            <h3 class="mt-2">Data Collection Disclaimer</h3>
+                            <h3 class="mt-2">Introduction</h3>
                             <p class="fs-5 mb-4">
-                                MarsTheLimit is a static informational website. We do not collect personal data from visitors directly.
+                                At Mars The Limit, your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and what choices you have.
+                            </p><p class="fs-5 mb-4">
+                                By using this website, you agree to the terms described here. If you have any questions, you can always reach out at marsthelimit890@gmail.com.
                             </p>
-                            <h3 class="mt-2">Email Contact Disclaimer</h3>
-                            <p class="fs-5 mb-4">
-                                If you choose to contact us by email, your message and email address will be used solely for the purpose of replying to your inquiry.
-                            </p>
-                            <h3 class="mt-2">3rd-Party Content Disclaimer</h3>
-                            <p class="fs-5 mb-4">
-                                Our site may link to or embed content from third-party platforms (e.g., YouTube, Instagram). These platforms may collect data in accordance with their own privacy policies.
-                            </p>
-                            <!-- <h3 class="mt-2">Advertisements Disclaimer</h3>
-                            <p class="fs-5 mb-4">
-                                Third-party vendors, including Google, use cookies to serve ads based on a user's previous visits. Users may opt out of personalized advertising by visiting Ads Settings.
-                            </p> -->
+                            <h3 class="mt-2 mb-4">Information We Collect</h3>
+                            <h4 class="mt-2">Information You Provide</h4>
+                            <p class="fs-5 mb-4">When you contact us by email or through any form on this site, we receive the information you include (such as your name, email address, and message).</p>
+                            <p class="fs-5 mb-4">We only use this information to reply or provide support, nothing else.</p>
+                            <h4 class="mt-2">Automatically Collected Data</h4>
+                            <p class="fs-5 mb-4">When you visit our site, standard technical data is automatically collected by your browser and web server. This may include:</p>
+                            <ul><li class="fs-5">Your IP address</li>
+                            <li class="fs-5">Browser type and version</li>
+                            <li class="fs-5">Operating system</li>
+                            <li class="fs-5">Referring website or search engine</li>
+                            <li class="fs-5">Pages visited and time spent</li></ul>
+                            <p class="fs-5">We use this information only for analytics (to understand how people use the site and improve it).</p>
+                            <h4 class="mt-2">Cookies & Similar Technologies</h4>
+                            <p class="fs-5 mb-4">We may use cookies (small text files stored on your device) to:</p><ul>
+                                <li class="fs-5">Keep the site running smoothly</li>
+                                <li class="fs-5">Remember basic preferences</li>
+                                <li class="fs-5">Measure anonymous traffic and performance</li></ul>
+                            <p class="fs-5 mb-4">You can disable cookies in your browser settings if you prefer.</p>
+
+                            <h3 class="mt-2 mb-4">Third-Party Services</h3>
+                            <p class="fs-5 mb-4">We may use third-party tools or services that collect, process, or store information according to their own privacy policies. These may include:</p>
+                            <ul>
+                            <li class="fs-5">Google Analytics - to understand how visitors use our site.</li>
+                            <li class="fs-5">Google AdSense - to display relevant ads (AdSense may use cookies or web beacons to serve ads based on your interests).</li>
+                            <li class="fs-5">Embedded content - such as YouTube videos, social media posts, or external links, which may collect data about your interaction with their content.</li>
+                            </ul>
+                            <p class="fs-5 mb-4">You can learn more about how Google uses data here: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">https://policies.google.com/technologies/partner-sites</a></p>
+
+                            <h3 class="mt-2 mb-4">How We Use Your Information</h3>
+                            <p class="fs-5 mb-4">We use collected information to:</p>
+                            <ul>
+                            <li class="fs-5">Maintain and improve our website</li>
+                            <li class="fs-5">Communicate with you when you contact us</li>
+                            <li class="fs-5">Monitor website performance and traffic</li>
+                            <li class="fs-5">Display personalized or contextual ads (if enabled)</li>
+                            </ul>
+                            <p class="fs-5 mb-4">We never sell or rent your personal data to anyone.</p>
+
+                            <h3 class="mt-2 mb-4">Data Retention</h3>
+                            <p class="fs-5 mb-4">We keep personal data (like emails) only as long as necessary to fulfill your request or comply with legal obligations. Anonymous analytics data may be kept longer for website improvement.</p>
+
+                            <h3 class="mt-2 mb-4">Your Rights</h3>
+                            <p class="fs-5 mb-4">Depending on your location, you may have the right to:</p>
+                            <ul>
+                            <li class="fs-5">Access the personal information we hold about you</li>
+                            <li class="fs-5">Request correction or deletion</li>
+                            <li class="fs-5">Withdraw consent for data collection (for example, by disabling cookies)</li>
+                            </ul>
+                            <p class="fs-5 mb-4">To exercise these rights, email us at <a href="mailto:marsthelimit890@gmail.com">marsthelimit890@gmail.com</a>.</p>
+
+                            <h3 class="mt-2 mb-4">Children's Privacy</h3>
+                            <p class="fs-5 mb-4">Our website is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us data, please contact us to have it removed.</p>
                         </section>
                         </article>
                 </div>
             </div>
         </div>
         <!-- Footer-->
-        <footer class="py-5 bg-dark" style="margin-top:20%;">
+        <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MarsTheLimit 2025 | <a href="/" class="text-white text-decoration-underline">Home Page</a></p></div>
         </footer>
         <!-- Bootstrap core JS-->

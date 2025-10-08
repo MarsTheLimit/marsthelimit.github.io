@@ -62,7 +62,7 @@ Q: Why are lithium-ion batteries so popular?
 A: Lithium-ion batteries are widely used because they offer high energy density, long cycle life, and relatively low self-discharge rates. This makes them perfect for portable electronics and electric vehicles. However, they are also more expensive and require careful charging to prevent degradation.
 
 Q: How long do batteries last?
-A: The lifespan of a battery depends on its chemistry and usage. Alkaline batteries may last months in low-power devices (although they can’t be recharged), while lithium-ion batteries typically last 500–1000 charge cycles before losing a good amount of energy capacity. Proper charging and storage can extend a battery’s useful life.
+A: The lifespan of a battery depends on its chemistry and usage. Alkaline batteries may last months in low-power devices (although they can't be recharged), while lithium-ion batteries typically last 500-1000 charge cycles before losing a good amount of energy capacity. Proper charging and storage can extend a battery's useful life.
 
 Q: Are batteries bad for the environment?
 A: Mining materials like lithium, cobalt, and nickel for batteries is energy-intensive and causes pollutants to enter the environment. It can damage ecosystems, use vast amounts of water, and release greenhouse gases. Additionally, discarded batteries can leak toxic materials into soil and water. Recycling and non-toxic alternatives like supercapacitors or hydrogen fuel cells are being explored to reduce these impacts.
