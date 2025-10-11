@@ -12,11 +12,17 @@
         <meta property="og:image" content="https://marsthelimit.com/bootstrap/home-page/assets/img/png/bg-masthead.jpg" />
         <meta property="og:url" content="https://marsthelimit.com/" />
 
-        <!-- Open Graph Tags -->
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="https://marsthelimit.com/src/branded.jpg" />
-        <meta property="og:url" content="" />
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self';
+            script-src 'self' https://use.fontawesome.com https://cdn.jsdelivr.net https://classic.avantlink.com;
+            style-src 'self' 'unsafe-inline' https://use.fontawesome.com https://cdn.jsdelivr.net;
+            img-src 'self' data:;
+            font-src 'self' https://use.fontawesome.com https://cdn.jsdelivr.net;
+            connect-src 'self';
+            object-src 'none';
+            base-uri 'self';
+            form-action 'self';
+        ">
 
         <title>Home | MarsTheLimit</title>
         <link rel="icon" type="image/x-icon" href="/src/favicon.ico" />
