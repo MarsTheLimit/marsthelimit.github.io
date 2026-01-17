@@ -1,11 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://marsthelimit.com/sitemap.xml
-Sitemap: https://marsthelimit.com/articles/articles-sitemap.xml
-Sitemap: https://marsthelimit.com/pages-sitemap.xml
-
-Disallow: /articles/formula-article
-Disallow: /nmlr-web/
-Disallow: /interactives/
-Disallow: /adsweb/
+Disallow: /
